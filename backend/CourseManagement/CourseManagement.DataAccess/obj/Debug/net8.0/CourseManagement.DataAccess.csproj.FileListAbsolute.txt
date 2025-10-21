@@ -1,0 +1,14 @@
+D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.DataAccess\bin\Debug\net8.0\CourseManagement.DataAccess.deps.json
+D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.DataAccess\bin\Debug\net8.0\CourseManagement.DataAccess.runtimeconfig.json
+D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.DataAccess\bin\Debug\net8.0\CourseManagement.DataAccess.dll
+D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.DataAccess\bin\Debug\net8.0\CourseManagement.DataAccess.pdb
+D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.DataAccess\obj\Debug\net8.0\CourseManagement.DataAccess.csproj.AssemblyReference.cache
+D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.DataAccess\obj\Debug\net8.0\CourseManagement.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.DataAccess\obj\Debug\net8.0\CourseManagement.DataAccess.AssemblyInfoInputs.cache
+D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.DataAccess\obj\Debug\net8.0\CourseManagement.DataAccess.AssemblyInfo.cs
+D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.DataAccess\obj\Debug\net8.0\CourseManagement.DataAccess.csproj.CoreCompileInputs.cache
+D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.DataAccess\obj\Debug\net8.0\CourseManagement.DataAccess.dll
+D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.DataAccess\obj\Debug\net8.0\refint\CourseManagement.DataAccess.dll
+D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.DataAccess\obj\Debug\net8.0\CourseManagement.DataAccess.pdb
+D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.DataAccess\obj\Debug\net8.0\CourseManagement.DataAccess.genruntimeconfig.cache
+D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.DataAccess\obj\Debug\net8.0\ref\CourseManagement.DataAccess.dll

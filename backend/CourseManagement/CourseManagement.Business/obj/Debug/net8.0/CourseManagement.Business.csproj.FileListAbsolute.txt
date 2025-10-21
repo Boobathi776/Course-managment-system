@@ -1,0 +1,15 @@
+D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.Business\bin\Debug\net8.0\CourseManagement.Business.deps.json
+D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.Business\bin\Debug\net8.0\CourseManagement.Business.dll
+D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.Business\bin\Debug\net8.0\CourseManagement.Business.pdb
+D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.Business\bin\Debug\net8.0\CourseManagement.DataAccess.dll
+D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.Business\bin\Debug\net8.0\CourseManagement.DataAccess.pdb
+D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.Business\obj\Debug\net8.0\CourseManagement.Business.csproj.AssemblyReference.cache
+D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.Business\obj\Debug\net8.0\CourseManagement.Business.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.Business\obj\Debug\net8.0\CourseManagement.Business.AssemblyInfoInputs.cache
+D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.Business\obj\Debug\net8.0\CourseManagement.Business.AssemblyInfo.cs
+D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.Business\obj\Debug\net8.0\CourseManagement.Business.csproj.CoreCompileInputs.cache
+D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.Business\obj\Debug\net8.0\CourseMa.581D0B39.Up2Date
+D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.Business\obj\Debug\net8.0\CourseManagement.Business.dll
+D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.Business\obj\Debug\net8.0\refint\CourseManagement.Business.dll
+D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.Business\obj\Debug\net8.0\CourseManagement.Business.pdb
+D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.Business\obj\Debug\net8.0\ref\CourseManagement.Business.dll
