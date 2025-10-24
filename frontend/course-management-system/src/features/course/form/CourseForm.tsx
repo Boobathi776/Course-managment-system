@@ -16,7 +16,6 @@ import "react-datepicker/dist/react-datepicker.css";
 import { useAppDispatch, type RootState } from "../../../store/store";
 import { addNewCourse, setEditingCourse, updateCourse } from "../../../store/slices/courseSlice";
 import { useSelector } from "react-redux";
-import { date } from "zod";
 
 const defaultValue: CourseFromScemaType = {
   name: "",
@@ -72,7 +71,6 @@ const CourseForm = () => {
       else
       {
         console.log(response.payload);
-
       }
     } else {
       var repsonse = await dispatch(addNewCourse(formData));

@@ -1,8 +1,8 @@
-import { createAsyncThunk, createSlice, current, type PayloadAction } from "@reduxjs/toolkit";
+import { createAsyncThunk, createSlice, type PayloadAction } from "@reduxjs/toolkit";
 import { api } from "../../api/services/apiInstance";
 import { PRIVATE } from "../../api/services/endPoints";
-import { useAppDispatch, type RootState } from "../store";
 import type { CourseFromScemaType } from "../../features/course/form/courseSchema";
+import { type RootState } from "../store";
 
 export type Course = {
     id : number,
@@ -54,13 +54,12 @@ export const addNewCourse = createAsyncThunk<Course,CourseFromScemaType,{rejectV
         {
             return rejectWithValue(error.response.data.message || "Unable to add a new course");
         }
-
     }
 );
 
 export const updateCourse = createAsyncThunk<Course,UpdateCourseArgument,{rejectValue : string}>(
     'course/update',
-    async({id,course},{rejectWithValue})=>{
+    async({id,course}:UpdateCourseArgument,{rejectWithValue})=>{
         try
         {   
         const response = await api.put(PRIVATE.UPDATE_COURSE+id,course);
@@ -70,7 +69,21 @@ export const updateCourse = createAsyncThunk<Course,UpdateCourseArgument,{reject
         {
             return rejectWithValue(error.response.data.message || "Unable to add a new course");
         }
+    }
+);
 
+export const deleteCourse = createAsyncThunk<number,number,{rejectValue : string}>(
+    'course/delete',
+    async(id,{rejectWithValue})=>{
+        try
+        {   
+        const response = await api.delete(PRIVATE.DELETE_COURSE+id);
+        return response.data.data && id ;
+        }
+        catch(error:any)
+        {
+            return rejectWithValue(error.response.data.message || "Unable to add a new course");
+        }
     }
 );
 
@@ -102,10 +115,15 @@ const courseSlice = createSlice({
                     state.courses[index] = action.payload;
                 }
             }
+        )
+        .addCase(deleteCourse.fulfilled,
+            (state,action:PayloadAction<number>)=>{
+               state.courses = state.courses.filter(c=>c.id !== action.payload);
+            }
         );
     }
 });
 
 export const courseReducer = courseSlice.reducer;
-export const getAllCourses = (state : RootState)=>state.course.courses;
+export const getAllCourses = (state:RootState)=>state.course?.courses;
 export const {setEditingCourse} = courseSlice.actions;

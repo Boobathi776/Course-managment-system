@@ -10,5 +10,6 @@ export const PUBLIC = Object.freeze({
 export const PRIVATE = Object.freeze({
     GET_ALL_COURSES : `/Course/courses`,
     POST_COURSE : `/Course/add`,
-    UPDATE_COURSE : `/Course/update/`
+    UPDATE_COURSE : `/Course/update/`,
+    DELETE_COURSE : `/Course/delete/`
 });

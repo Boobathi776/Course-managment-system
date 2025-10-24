@@ -13,7 +13,7 @@ export const tokenDecoder = (token : string) : TokenType =>{
     const tokenObject : TokenType = {
         name : tokenValues[0] as string,
         userID : tokenValues[1] as string,
-        email : tokenValues[2] as string,
+        email : tokenValues[2] as string,   
         role : tokenValues[3] as string
     }
     return tokenObject;

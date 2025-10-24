@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace CourseManagement.DataAccess.Repositories
 {
-    public class CourseRepository : GenericRepository<Course>, ICourseRepository
+    public class CourseRepository : MyGenericRepository<Course>, ICourseRepository
     {
         private readonly CoursedbContext _courseDbContext;
         public CourseRepository(CoursedbContext courseDbContext) : base(courseDbContext) 

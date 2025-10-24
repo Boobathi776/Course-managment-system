@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CourseManagement.DataAccess.Interfaces
 {
-    public interface ICourseRepository : IGenericRepository<Course>
+    public interface ICourseRepository : IMyIGenericRepository<Course>
     {
 
     }

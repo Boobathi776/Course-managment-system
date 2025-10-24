@@ -28,23 +28,20 @@ function App() {
   const token = accessToken ? tokenDecoder(accessToken) : null;
 
   const adminRoutes = (
-    <>
-    {/* // <Route element={<ProtectedRoutes isAuthenticated={true} />}> */}
+    <Route element={<ProtectedRoutes isAuthenticated={accessToken.length>0} />}>
       <Route path={courseForm} element={<CourseForm/>}/>
       <Route path={adminUserDashBoard} element={<UserDashboard />}></Route>
       <Route path={adminCourseDashBoard} element={<CourseDashboard />}></Route>
       <Route path={profilePage} element={<Profile />} />
-    {/* // </Route> */}
-    </>
+    </Route>
   );
 
   const userRoutes = (
-    // <Route element={<ProtectedRoutes isAuthenticated={true} />}>
-    <>
+    <Route element={<ProtectedRoutes isAuthenticated={accessToken.length>0} />}>
       <Route path={coursePage} element={<CoursePage />}></Route>
       <Route path={enrollmentPage} element={<EnrollementPage />}></Route>
       <Route path={profilePage} element={<Profile />} />
-    </>
+    </Route>
   );
 
   const routes = token?.role == "Admin" ? adminRoutes : userRoutes;

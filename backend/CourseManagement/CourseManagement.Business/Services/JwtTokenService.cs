@@ -1,12 +1,8 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
-using System;
-using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
 using System.Security.Claims;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace CourseManagement.Business.Services
 {
@@ -14,16 +10,16 @@ namespace CourseManagement.Business.Services
     {
         private readonly IConfiguration _configuration;
 
-        public JwtTokenService(IConfiguration configuration) 
+        public JwtTokenService(IConfiguration configuration)
         {
             _configuration = configuration;
         }
 
-        public string GenerateToken(Guid userId,string userName,string email,string Role,bool isAccessToken)
+        public string GenerateToken(Guid userId, string userName, string email, string Role, bool isAccessToken)
         {
             try
             {
-                var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JwtSettings:Key"]));
+                var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JwtSettings:Key"]!));
                 var cred = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
                 var claims = new List<Claim>
@@ -36,15 +32,15 @@ namespace CourseManagement.Business.Services
 
                 string expiryDuration = isAccessToken ? "AccessTokenExpiryTime" : "RefreshTokenExpiryTime";
 
-                if (int.TryParse(_configuration[$"JwtSettings:{expiryDuration}"],out int expiryTime))
+                if (int.TryParse(_configuration[$"JwtSettings:{expiryDuration}"], out int expiryTime))
                 {
-                  var token = new JwtSecurityToken(
-                   issuer: _configuration["JwtSettings:Issuer"],
-                   audience: _configuration["JwtSettings:Audience"],
-                   claims: claims,
-                   signingCredentials: cred,
-                   expires: isAccessToken ?  DateTime.UtcNow.AddMinutes(expiryTime) : DateTime.UtcNow.AddDays(expiryTime)
-                   );
+                    var token = new JwtSecurityToken(
+                     issuer: _configuration["JwtSettings:Issuer"],
+                     audience: _configuration["JwtSettings:Audience"],
+                     claims: claims,
+                     signingCredentials: cred,
+                     expires: isAccessToken ? DateTime.UtcNow.AddMinutes(expiryTime) : DateTime.UtcNow.AddDays(expiryTime)
+                     );
 
                     return new JwtSecurityTokenHandler().WriteToken(token);
                 }
@@ -53,12 +49,12 @@ namespace CourseManagement.Business.Services
                     throw new ArgumentException("Invalid token duration");
                 }
             }
-            catch(ArgumentException e)
+            catch (ArgumentException e)
             {
                 Console.WriteLine(e.ToString());
                 return null;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Console.Write(ex.ToString());
                 return null;
@@ -79,11 +75,12 @@ namespace CourseManagement.Business.Services
                     ValidateAudience = true,
                     ValidateIssuerSigningKey = true,
                     ValidateLifetime = true,
+                    ClockSkew = TimeSpan.Zero
                 };
 
 
                 var principal = new JwtSecurityTokenHandler().ValidateToken(refreshToken, tokenValidations, out SecurityToken validatedToken);
-                
+
                 return principal;
             }
             catch (Exception ex)

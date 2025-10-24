@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CourseManagement.DataAccess.Interfaces
 {
-    public interface IUserRepository : IGenericRepository<User>
+    public interface IUserRepository : IMyIGenericRepository<User>
     {
         Task<bool> IsAlreadyExistingMailIdAsync(string email);
         Task<User> GetUserByEmailAsync(string email);

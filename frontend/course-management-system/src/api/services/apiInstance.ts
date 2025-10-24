@@ -49,7 +49,7 @@ api.interceptors.response.use(
         const originalRequest = error.config;
         try
         {
-            if(error?.response?.status === 401 && !originalRequest._retry)
+            if(error.response?.status === 401 && !originalRequest._retry)
             {
                 originalRequest._retry = true;
                 if(isRefreshing)
@@ -63,6 +63,7 @@ api.interceptors.response.use(
                     })
                     .catch(error=>Promise.reject(error));
                 }
+                
                 isRefreshing = true;
                 const state = store.getState();
                 const dispatch = store.dispatch;
@@ -85,5 +86,6 @@ api.interceptors.response.use(
             dispatch(logout());
             return Promise.reject(error);
         }
+        return Promise.reject(error);
     }
 )

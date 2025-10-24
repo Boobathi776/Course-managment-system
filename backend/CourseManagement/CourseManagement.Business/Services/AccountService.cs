@@ -4,13 +4,8 @@ using CourseManagement.Business.Dto.ResponseDto;
 using CourseManagement.Business.Interfaces;
 using CourseManagement.DataAccess.Interfaces;
 using CourseManagement.DataAccess.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Security.Claims;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CourseManagement.Business.Services
 {
@@ -19,7 +14,7 @@ namespace CourseManagement.Business.Services
         private readonly IUserRepository _userRepository;
         private readonly IMapper _mapper;
         private readonly JwtTokenService jwtTokenService;
-        public AccountService(IUserRepository userRepository,IMapper mapper, JwtTokenService jwtTokenService)
+        public AccountService(IUserRepository userRepository, IMapper mapper, JwtTokenService jwtTokenService)
         {
             _userRepository = userRepository;
             _mapper = mapper;
@@ -32,6 +27,9 @@ namespace CourseManagement.Business.Services
             {
                 if (await _userRepository.IsAlreadyExistingMailIdAsync(newUser.Email))
                 {
+                    var hashedPassword = BCrypt.Net.BCrypt.HashPassword(newUser.Password);
+                    Console.WriteLine(hashedPassword);
+
                     return new GenericResponseDto<RegisteredUserDto>
                     {
                         StatusCode = HttpStatusCode.BadRequest.GetHashCode(),
@@ -72,14 +70,14 @@ namespace CourseManagement.Business.Services
             try
             {
                 var user = await _userRepository.GetUserByEmailAsync(loginCredentials.Email);
-                if(user!=null && user.Role!=null)
+                if (user != null && user.Role != null)
                 {
                     var accessToken = jwtTokenService.GenerateToken(user.Id, user.Name, user.Email, user.Role.RoleName, true);
                     var refreshToken = jwtTokenService.GenerateToken(user.Id, user.Name, user.Email, user.Role.RoleName, false);
                     return new GenericResponseDto<TokenDto>
                     {
                         StatusCode = HttpStatusCode.OK.GetHashCode(),
-                        Success =true,
+                        Success = true,
                         Message = "Successfully login",
                         Data = new TokenDto
                         {
@@ -99,7 +97,7 @@ namespace CourseManagement.Business.Services
                     };
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 return new GenericResponseDto<TokenDto>
                 {
@@ -117,17 +115,18 @@ namespace CourseManagement.Business.Services
             try
             {
                 var principle = jwtTokenService.ValidateToken(refreshToken);
-                if(principle==null) 
+                if (principle == null)
                     return new GenericResponseDto<TokenDto>
-                {
-                    StatusCode = HttpStatusCode.BadRequest.GetHashCode(),
-                    Success = false,
-                    Message = "Invalid refresh token",
-                    Data = null
-                };
+                    {
+                        StatusCode = HttpStatusCode.BadRequest.GetHashCode(),
+                        Success = false,
+                        Message = "Invalid refresh token",
+                        Data = null
+                    };
 
                 var email = principle.FindFirst(p => p.Type == ClaimTypes.Email).Value;
-                var user = email!=null ? await _userRepository.GetUserByEmailAsync(email) : null;
+
+                var user = email != null ? await _userRepository.GetUserByEmailAsync(email) : null;
 
                 if (user != null && user.Role != null)
                 {
@@ -156,7 +155,7 @@ namespace CourseManagement.Business.Services
                     };
                 }
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 Console.WriteLine(e.ToString());
                 return null;

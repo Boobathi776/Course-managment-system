@@ -7,7 +7,7 @@ const RootLayout = () => {
   return (
     <>
       <Navbar></Navbar>
-      <Box sx={{marginTop:10}}>
+      <Box sx={{marginTop:10,minHeight:"84vh"}}>
         <Outlet />
       </Box>
       <Footer/>

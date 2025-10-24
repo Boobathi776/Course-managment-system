@@ -70,5 +70,18 @@ namespace CourseManagement.Business.Services
                 Data = response
             };
         }
+
+        public async Task<GenericResponseDto<bool>> DeleteCourse(int id)
+        {
+            var response = await _courseRepository.DeleteAsync(id);
+            return new GenericResponseDto<bool> 
+            {
+                StatusCode = 200,
+                Success = true,
+                Message = "Course deleted successfully",
+                Data = response
+            };
+
+        }
     }
 }

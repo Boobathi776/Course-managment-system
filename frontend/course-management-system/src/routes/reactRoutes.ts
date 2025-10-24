@@ -11,6 +11,5 @@ export const courseForm = `/course-form`;
 // user protected pages
 export const coursePage = `/course`;
 export const enrollmentPage = `/enrollment`;
-
 export const profilePage = `/profile`;
 

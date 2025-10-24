@@ -71,9 +71,9 @@ namespace CourseManagement.DataAccess.Repositories
             return rowsAffected>0 ? entity : null;
         }
 
-        public async Task<bool> DeleteAsync(T entity)
+        public async Task<bool> DeleteAsync(int id)
         {
-            _dbSet.Remove(entity);
+            _dbSet.Remove(_dbSet.Find(id));
             var rowsAffected =  await _context.SaveChangesAsync(); 
             return rowsAffected > 0;
         }

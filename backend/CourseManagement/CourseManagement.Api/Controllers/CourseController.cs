@@ -66,5 +66,14 @@ namespace CourseManagement.Api.Controllers
            var response =  await  _courseService.UpdateCourseAsync(course);
             return response.Success ? Ok(response) : NotFound();
         }
+
+        [HttpDelete("delete/{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<ActionResult<GenericResponseDto<bool>>> DeleteCourse([FromRoute] int id)
+        {
+            var reponse = await _courseService.DeleteCourse(id);
+            return reponse.Success ? Ok(reponse) : NotFound();  
+        }
     }
 }

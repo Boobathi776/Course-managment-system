@@ -15,6 +15,7 @@ namespace CourseManagement.Business.Interfaces
         Task<GenericResponseDto<IEnumerable<Course>>> GetAllCoursesAsync();
         Task<GenericResponseDto<Course>> AddNewCourse(CourseDto newCourse);
         Task<GenericResponseDto<Course>> UpdateCourseAsync(Course course);
+        Task<GenericResponseDto<bool>> DeleteCourse(int id);
 
     }
 }

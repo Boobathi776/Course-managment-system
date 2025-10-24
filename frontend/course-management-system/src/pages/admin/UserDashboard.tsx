@@ -1,10 +1,11 @@
-import React from 'react'
+import { Box } from '@mui/material'
+import UserForm from '../../features/user/form/UserForm'
 
 const UserDashboard = () => {
   return (
-    <div>
-      user dashboard
-    </div>
+    <Box sx={{display:"flex",justifyContent:"center",alignItems:"center"}}>
+      <UserForm/>
+    </Box>
   )
 }
 

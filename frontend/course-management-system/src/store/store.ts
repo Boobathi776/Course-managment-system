@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 import storage from "redux-persist/lib/storage"
 import { loginReducer } from "./slices/loginSlice";
 import { courseReducer } from "./slices/courseSlice";
+import { useReducer } from "react";
 
 const persistConfig = {
     key : "root",
@@ -11,10 +12,10 @@ const persistConfig = {
     whitelist : ["login"]
 };
 
-
 const rootReducer = combineReducers({
     login : loginReducer,
-    course:courseReducer
+    course:courseReducer,
+    users :useReducer,
 });
 
 const persistedReducer = persistReducer(persistConfig,rootReducer);
