@@ -11,7 +11,6 @@ namespace CourseManagement.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles ="Admin")]
     public class UserController : ControllerBase
     {
         private readonly IUserService _userService;
@@ -20,6 +19,18 @@ namespace CourseManagement.Api.Controllers
             _userService = userService;
         }
 
+        [Authorize(Roles = "User")]
+        [HttpGet("singleUser")]
+        public async Task<ActionResult<GenericResponseDto<UserDto>>> Get()
+        {
+            var userId = User.FindFirst("UserId")?.Value;
+           Guid.TryParse(userId, out Guid actualId);
+
+            var response = await _userService.GetUserByGuid(actualId);
+            return response.Success ? Ok(response) : BadRequest(response);
+        }
+
+        [Authorize(Roles = "Admin")]
         [HttpGet("users")]
         public async Task<ActionResult<IEnumerable<UserDto>>> GetAllUsers()
         {
@@ -27,6 +38,7 @@ namespace CourseManagement.Api.Controllers
             return Ok(response);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPut("update/{id}")]
         public async Task<ActionResult<UserDto>> UpdateUser([FromRoute(Name ="id")] Guid userId,[FromBody] UpdateUserDto user)
         {
@@ -48,6 +60,7 @@ namespace CourseManagement.Api.Controllers
             }
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpDelete("deleteUser/{id}")]
         public async Task<ActionResult<GenericResponseDto<Guid>>> DeleteUser([FromRoute(Name ="id")]Guid userId)
         {

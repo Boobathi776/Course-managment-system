@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Azure.Core;
 using CourseManagement.Business.Dto.RequestDto;
 using CourseManagement.Business.Dto.ResponseDto;
 using CourseManagement.Business.Interfaces;
@@ -70,21 +71,36 @@ namespace CourseManagement.Business.Services
             try
             {
                 var user = await _userRepository.GetUserByEmailAsync(loginCredentials.Email);
+               
                 if (user != null && user.Role != null)
                 {
-                    var accessToken = jwtTokenService.GenerateToken(user.Id, user.Name, user.Email, user.Role.RoleName, true);
-                    var refreshToken = jwtTokenService.GenerateToken(user.Id, user.Name, user.Email, user.Role.RoleName, false);
-                    return new GenericResponseDto<TokenDto>
+                    if (!user.IsActive)
                     {
-                        StatusCode = HttpStatusCode.OK.GetHashCode(),
-                        Success = true,
-                        Message = "Successfully login",
-                        Data = new TokenDto
+                        return new GenericResponseDto<TokenDto>
                         {
-                            AccessToken = accessToken,
-                            RefreshToken = refreshToken
-                        }
-                    };
+                            StatusCode = HttpStatusCode.BadRequest.GetHashCode(),
+                            Success = false,
+                            Message = "In active users not allowed to sign in",
+                            Data = null
+                        };
+                    }
+                    else
+                    {
+                        var accessToken = jwtTokenService.GenerateToken(user.Id, user.Name, user.Email, user.Role.RoleName, true);
+                        var refreshToken = jwtTokenService.GenerateToken(user.Id, user.Name, user.Email, user.Role.RoleName, false);
+                        return new GenericResponseDto<TokenDto>
+                        {
+                            StatusCode = HttpStatusCode.OK.GetHashCode(),
+                            Success = true,
+                            Message = "Successfully login",
+                            Data = new TokenDto
+                            {
+                                AccessToken = accessToken,
+                                RefreshToken = refreshToken
+                            }
+                        };
+                    }
+                       
                 }
                 else
                 {

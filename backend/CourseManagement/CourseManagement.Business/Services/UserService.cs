@@ -25,6 +25,31 @@ namespace CourseManagement.Business.Services
             _mapper = mapper;
         }
 
+        public async Task<GenericResponseDto<UserDto>> GetUserByGuid(Guid id)
+        {
+            var user =  await _userRepository.GetUserByGuid(id);
+            if (user == null) 
+            {
+                return new GenericResponseDto<UserDto>
+                {
+                    StatusCode = HttpStatusCode.NotFound.GetHashCode(),
+                    Success = false,
+                    Message = "No user data found",
+                    Data = null
+                };
+            }
+            else
+            {
+                var mappedUser = _mapper.Map<UserDto>(user);
+                return new GenericResponseDto<UserDto>
+                {
+                    StatusCode = HttpStatusCode.OK.GetHashCode(),
+                    Success = true,
+                    Message = "User data found successfully",
+                    Data = mappedUser
+                };
+            }
+        }
         public async Task<IEnumerable<UserDto>> GetAllUsers()
         {
             var users = await _userRepository.GetAllAsync();

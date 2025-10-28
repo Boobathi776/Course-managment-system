@@ -34,6 +34,7 @@ namespace CourseManagement.Api.Controllers
             };
         }
 
+        [AllowAnonymous]
         [HttpGet("courses")]
         public async Task<ActionResult<IEnumerable<Course>>> GetAll()
         {

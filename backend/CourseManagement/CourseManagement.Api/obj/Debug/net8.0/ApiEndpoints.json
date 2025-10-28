@@ -274,6 +274,26 @@
   },
   {
     "ContainingType": "CourseManagement.Api.Controllers.UserController",
+    "Method": "Get",
+    "RelativePath": "api/User/singleUser",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CourseManagement.Business.Dto.ResponseDto.GenericResponseDto\u00601[[CourseManagement.Business.Dto.ResponseDto.UserDto, CourseManagement.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CourseManagement.Api.Controllers.UserController",
     "Method": "UpdateUser",
     "RelativePath": "api/User/update/{id}",
     "HttpMethod": "PUT",
