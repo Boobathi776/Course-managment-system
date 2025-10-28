@@ -94,3 +94,6 @@ D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.Api\
 D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.Api\bin\Debug\net8.0\CourseManagement.DataAccess.dll
 D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.Api\bin\Debug\net8.0\CourseManagement.Business.pdb
 D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.Api\bin\Debug\net8.0\CourseManagement.DataAccess.pdb
+D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.Api\obj\Debug\net8.0\CourseManagement.Api.sourcelink.json
+D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.Api\bin\Debug\net8.0\BCrypt.Net-Next.dll
+D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.Api\bin\Debug\net8.0\CourseManagement.Api.staticwebassets.runtime.json

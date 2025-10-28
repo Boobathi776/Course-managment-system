@@ -13,3 +13,4 @@ D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.Busi
 D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.Business\obj\Debug\net8.0\refint\CourseManagement.Business.dll
 D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.Business\obj\Debug\net8.0\CourseManagement.Business.pdb
 D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.Business\obj\Debug\net8.0\ref\CourseManagement.Business.dll
+D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.Business\obj\Debug\net8.0\CourseManagement.Business.sourcelink.json

@@ -12,3 +12,4 @@ D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.Data
 D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.DataAccess\obj\Debug\net8.0\CourseManagement.DataAccess.pdb
 D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.DataAccess\obj\Debug\net8.0\CourseManagement.DataAccess.genruntimeconfig.cache
 D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.DataAccess\obj\Debug\net8.0\ref\CourseManagement.DataAccess.dll
+D:\Git-hub\CourseManagementSystem\backend\CourseManagement\CourseManagement.DataAccess\obj\Debug\net8.0\CourseManagement.DataAccess.sourcelink.json
