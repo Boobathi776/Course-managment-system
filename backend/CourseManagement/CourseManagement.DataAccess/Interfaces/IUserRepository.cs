@@ -11,5 +11,8 @@ namespace CourseManagement.DataAccess.Interfaces
     {
         Task<bool> IsAlreadyExistingMailIdAsync(string email);
         Task<User> GetUserByEmailAsync(string email);
+        Task<User> GetUserByGuid(Guid id);
+        Task<User> UpdateUser(User user);
+        Task<Guid> DeleteUserAsync(Guid userId);
     }
 }

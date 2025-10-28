@@ -44,6 +44,8 @@ namespace CourseManagement.Api
             builder.Services.AddScoped<JwtTokenService, JwtTokenService>();
             builder.Services.AddScoped<ICourseService, CourseService>();
             builder.Services.AddScoped<IAccountService, AccountService>();
+
+            builder.Services.AddScoped<IUserService,UserService>();
             // Add services to the container.
 
             builder.Services.AddAuthentication(options =>

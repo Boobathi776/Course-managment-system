@@ -16,7 +16,10 @@ namespace CourseManagement.Business.Mappings
         public MappingProfile()
         {
             CreateMap<RegisterUserDto,User>().ForMember(des=>des.RoleId , opt => opt.MapFrom(src =>src.IsAdmin ? (int)Roles.Admin : (int)Roles.User ));
-            CreateMap<User, RegisteredUserDto>();
+            CreateMap<User, UserDto>()
+                .ForMember(des=>des.IsAdmin , opt=>opt.MapFrom(src=>src.RoleId == (int)Roles.Admin ? true : false)).ReverseMap();
+
+            CreateMap<UpdateUserDto, User>();
         }
     }
 }

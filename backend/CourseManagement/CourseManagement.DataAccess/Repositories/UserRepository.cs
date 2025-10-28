@@ -2,6 +2,7 @@
 using CourseManagement.DataAccess.Interfaces;
 using CourseManagement.DataAccess.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Identity.Client;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,6 +31,35 @@ namespace CourseManagement.DataAccess.Repositories
             return matchedUser;
         }
 
+        public async Task<User> GetUserByGuid(Guid id)
+        {
+            var matchedUser = await _context.Users.AsNoTracking().Where(u=>u.Id==id).FirstOrDefaultAsync();
+            return matchedUser;
+        }
+
+        public async Task<User> UpdateUser(User user)
+        {
+            _context.Users.Update(user);
+            var rowsAffected = await _context.SaveChangesAsync();
+            return rowsAffected>0 ? user: null;
+        }
+
+        public async Task<Guid> DeleteUserAsync(Guid userId)
+        {
+            var matchedUser = await GetUserByGuid(userId);
+            int rowsAffected = 0;
+            if(matchedUser != null)
+            {
+                _context.Users.Remove(matchedUser); 
+                rowsAffected = await _context.SaveChangesAsync();
+            }
+            else
+            {
+                rowsAffected = 0;   
+            }
+
+            return rowsAffected > 0 ? userId : Guid.Empty;
+        }
 
     }
 }

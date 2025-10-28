@@ -23,7 +23,7 @@ namespace CourseManagement.Api.Controllers
         }
 
         [HttpPost("register")]
-        public async Task<ActionResult<GenericResponseDto<RegisteredUserDto>>> RegisterUser([FromBody] RegisterUserDto registerUserDto)
+        public async Task<ActionResult<GenericResponseDto<UserDto>>> RegisterUser([FromBody] RegisterUserDto registerUserDto)
         {
            var response =  await _accountService.RegisterNewUserAsync(registerUserDto);
            return response.Success ? Ok(response) : BadRequest(response);

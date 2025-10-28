@@ -50,6 +50,10 @@ go;
 
 select * from Users;
 select * from Roles;
+select * from Courses;
+select * from Enrollments;
+
+
 
 INSERT INTO Courses (Name, StartDate, CourseDuration, MinimumAgeRequired)
 VALUES
@@ -60,3 +64,16 @@ VALUES
 ('Cloud Computing Fundamentals', '2025-10-25', 4, 16),
 
 ('Advanced SQL and Database Design', '2025-11-15', 5, 18);
+
+
+create table FileUploads(
+Id int not null identity(1,1) primary key,
+FileName varchar(100) not null,
+FilePath varchar(100) not null,
+FileSize int not null ,
+ContentType varchar(100) not null
+);
+
+
+select * from FileUploads;
+

@@ -11,7 +11,7 @@ namespace CourseManagement.Business.Interfaces
 {
     public interface IAccountService
     {
-        Task<GenericResponseDto<RegisteredUserDto>> RegisterNewUserAsync(RegisterUserDto newUser);
+        Task<GenericResponseDto<UserDto>> RegisterNewUserAsync(RegisterUserDto newUser);
         Task<GenericResponseDto<TokenDto>> LoginUserAsync(LoginDto loginCredentials);
         Task<GenericResponseDto<TokenDto>> RefreshTheTokenAsync(string refreshToken);
     }

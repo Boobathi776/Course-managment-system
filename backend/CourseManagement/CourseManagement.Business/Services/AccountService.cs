@@ -21,7 +21,7 @@ namespace CourseManagement.Business.Services
             this.jwtTokenService = jwtTokenService;
         }
 
-        public async Task<GenericResponseDto<RegisteredUserDto>> RegisterNewUserAsync(RegisterUserDto newUser)
+        public async Task<GenericResponseDto<UserDto>> RegisterNewUserAsync(RegisterUserDto newUser)
         {
             try
             {
@@ -30,7 +30,7 @@ namespace CourseManagement.Business.Services
                     var hashedPassword = BCrypt.Net.BCrypt.HashPassword(newUser.Password);
                     Console.WriteLine(hashedPassword);
 
-                    return new GenericResponseDto<RegisteredUserDto>
+                    return new GenericResponseDto<UserDto>
                     {
                         StatusCode = HttpStatusCode.BadRequest.GetHashCode(),
                         Success = false,
@@ -42,8 +42,8 @@ namespace CourseManagement.Business.Services
                 {
                     var actualUser = _mapper.Map<User>(newUser);
                     var storedUser = await _userRepository.AddAsync(actualUser);
-                    var responseUser = _mapper.Map<RegisteredUserDto>(storedUser);
-                    return new GenericResponseDto<RegisteredUserDto>
+                    var responseUser = _mapper.Map<UserDto>(storedUser);
+                    return new GenericResponseDto<UserDto>
                     {
                         StatusCode = HttpStatusCode.OK.GetHashCode(),
                         Success = true,
@@ -55,7 +55,7 @@ namespace CourseManagement.Business.Services
             catch (Exception ex)
             {
                 Console.WriteLine(ex.ToString());
-                return new GenericResponseDto<RegisteredUserDto>
+                return new GenericResponseDto<UserDto>
                 {
                     StatusCode = HttpStatusCode.InternalServerError.GetHashCode(),
                     Success = false,
