@@ -5,6 +5,7 @@ import {
   FormHelperText,
   TextField,
   Typography,
+  type AlertColor,
 } from "@mui/material";
 import { Controller, useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
@@ -22,6 +23,8 @@ import { store, type AppDispatch } from "../../store/store";
 import { loginSchema, type LoginFormType } from "./loginSchema";
 import { useDispatch } from "react-redux";
 import { loginUser } from "../../store/slices/loginSlice";
+import { useRef, useState } from "react";
+import Toast from "../../shared/components/Toast";
 
 const defaulValue: LoginFormType = {
   email: "",
@@ -41,8 +44,18 @@ const Login = () => {
     mode: "onBlur",
     reValidateMode: "onChange",
   });
+
   const navigator = useNavigate();
   const dispatch = useDispatch<AppDispatch>();
+
+  const [isToastOpen, setIsToastOpen] = useState<boolean>(false);
+  const toastOptions = useRef<{
+    message: string;
+    color: AlertColor;
+  }>({
+    message: "",
+    color: "success",
+  });
 
   const handleFormSubmit = async (formData: LoginFormType) => {
     console.log(formData);
@@ -59,6 +72,9 @@ const Login = () => {
       else navigator(homePage);
     } else if (loginUser.rejected.match(response)) {
       console.log(response.payload);
+      toastOptions.current.message = response.payload || "Unable to login";
+      toastOptions.current.color = "error"
+      setIsToastOpen(true);
     }
   };
 
@@ -72,74 +88,78 @@ const Login = () => {
   }
 
   return (
-    <Box
-      sx={{
-        width: "100%",
-        minHeight: "80vh",
-        marginTop: 10,
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <CenterPaper elevation={4}>
-        <FormBox
-          component="form"
-          onSubmit={handleSubmit(handleFormSubmit, handleFormError)}
-        >
-          <Typography fontSize={30}>Sign in</Typography>
+    <>
+      <Box
+        sx={{
+          width: "100%",
+          minHeight: "80vh",
+          marginTop: 10,
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <CenterPaper elevation={4}>
+          <FormBox
+            component="form"
+            onSubmit={handleSubmit(handleFormSubmit, handleFormError)}
+          >
+            <Typography fontSize={30}>Sign in</Typography>
 
-          <Controller
-            name="email"
-            control={control}
-            render={({ field }) => {
-              return (
-                <TextField
-                  label="Email*"
-                  placeholder="Enter your email address"
-                  error={!!errors.email}
-                  helperText={errors.email?.message}
-                  fullWidth
-                  autoFocus
-                  {...field}
-                  inputRef={(el) => field.ref(el)}
-                />
-              );
-            }}
-          />
+            <Controller
+              name="email"
+              control={control}
+              render={({ field }) => {
+                return (
+                  <TextField
+                    label="Email*"
+                    placeholder="Enter your email address"
+                    error={!!errors.email}
+                    helperText={errors.email?.message}
+                    fullWidth
+                    autoFocus
+                    {...field}
+                    inputRef={(el) => field.ref(el)}
+                  />
+                );
+              }}
+            />
 
-          <Controller
-            name="password"
-            control={control}
-            render={({ field }) => {
-              return (
-                <TextField
-                  type="password"
-                  label="Password*"
-                  placeholder="Enter your email password"
-                  error={!!errors.password}
-                  helperText={errors.password?.message}
-                  fullWidth
-                  inputRef={(el) => field.ref(el)}
-                  {...field}
-                />
-              );
-            }}
-          />
+            <Controller
+              name="password"
+              control={control}
+              render={({ field }) => {
+                return (
+                  <TextField
+                    type="password"
+                    label="Password*"
+                    placeholder="Enter your email password"
+                    error={!!errors.password}
+                    helperText={errors.password?.message}
+                    fullWidth
+                    inputRef={(el) => field.ref(el)}
+                    {...field}
+                  />
+                );
+              }}
+            />
 
-          <Button type="submit" variant="contained" color="primaryButton">
-            Submit
-          </Button>
-
-          <FormHelperText>
-            If you don't have an account ?{" "}
-            <Button size="small" onClick={handleClick}>
-              register
+            <Button type="submit" variant="contained" color="primaryButton">
+              Submit
             </Button>
-          </FormHelperText>
-        </FormBox>
-      </CenterPaper>
-    </Box>
+
+            <FormHelperText>
+              If you don't have an account ?{" "}
+              <Button size="small" onClick={handleClick}>
+                register
+              </Button>
+            </FormHelperText>
+          </FormBox>
+        </CenterPaper>
+      </Box>
+
+      <Toast message={toastOptions.current.message} color={toastOptions.current.color} isOpen={isToastOpen} setIsOpen={setIsToastOpen}></Toast>
+    </>
   );
 };
 

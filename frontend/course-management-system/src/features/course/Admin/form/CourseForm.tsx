@@ -12,10 +12,10 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { Controller, useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
-import { CenterPaper } from "../../../shared/components/CenterPaper";
-import { FormBox } from "../../../shared/components/FormBox";
-import { addNewCourse, setEditingCourse, updateCourse } from "../../../store/slices/courseSlice";
-import { type RootState, type AppDispatch } from "../../../store/store";
+import { CenterPaper } from "../../../../shared/components/CenterPaper";
+import { FormBox } from "../../../../shared/components/FormBox";
+import { addNewCourse, setEditingCourse, updateCourse } from "../../../../store/slices/courseSlice";
+import { type RootState, type AppDispatch } from "../../../../store/store";
 import { courseFromSchema, type CourseFromScemaType } from "./courseSchema";
 
 const defaultValue: CourseFromScemaType = {

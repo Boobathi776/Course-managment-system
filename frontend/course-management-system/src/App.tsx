@@ -21,7 +21,7 @@ import Home from "./pages/Home";
 import { useSelector } from "react-redux";
 import { tokenDecoder } from "./shared/functions/tokenDecocer";
 import Profile from "./pages/Profile";
-import CourseForm from "./features/course/form/CourseForm";
+import CourseForm from "./features/course/Admin/form/CourseForm";
 import UserForm from "./features/user/form/UserForm";
 import { getAccessToken } from "./store/selectors/overAllSelcetors";
 

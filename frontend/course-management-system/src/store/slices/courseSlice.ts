@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice, type PayloadAction } from "@reduxjs/toolkit";
 import { api } from "../../api/services/apiInstance";
 import { PRIVATE } from "../../api/services/endPoints";
-import type { CourseFromScemaType } from "../../features/course/form/courseSchema";
+import type { CourseFromScemaType } from "../../features/course/Admin/form/courseSchema";
 
 export type Course = {
     id : number,
@@ -108,6 +108,7 @@ const courseSlice = createSlice({
         )
         .addCase(updateCourse.fulfilled,
             (state,action:PayloadAction<Course>)=>{
+                console.log(state.courses);
                 const index = state.courses.findIndex(c=>c.id===action.payload.id);
                 if(index!=-1)
                 {
@@ -117,6 +118,7 @@ const courseSlice = createSlice({
         )
         .addCase(deleteCourse.fulfilled,
             (state,action:PayloadAction<number>)=>{
+                console.log(state.courses);
                state.courses = state.courses.filter(c=>c.id !== action.payload);
             }
         );

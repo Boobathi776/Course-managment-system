@@ -23,11 +23,13 @@ export type UserReturnType = {
 
 type UserSliceStateType = {
     users : UserReturnType[],
-    editingUser : UserReturnType | null
+    editingUser : UserReturnType | null,
+    user : UserReturnType | null
 };
 
 const initialState : UserSliceStateType = {
     users : [],
+    user : null,
     editingUser: null
 }
 
@@ -93,6 +95,26 @@ export const deleteUser = createAsyncThunk<string,string,{rejectValue:string}>(
     }
 );
 
+
+// User details fetch not by admin by user
+
+export const fetchUser = createAsyncThunk<UserReturnType,void,{rejectValue:string}>(
+    'users/get',
+    async(_,{rejectWithValue})=>{
+        try
+        {
+            var response = await api.get(PRIVATE.GET_SINGLE_USER);
+            return response.data.data;
+        }   
+        catch(error:any)
+        {
+            return rejectWithValue(error.response.data.data.message || "Unable to fetch the user");
+        }
+    }
+);
+
+
+
  const userSlice = createSlice({
     name:"users",
     initialState: initialState,
@@ -118,6 +140,9 @@ export const deleteUser = createAsyncThunk<string,string,{rejectValue:string}>(
         })
         .addCase(deleteUser.fulfilled,(state,action:PayloadAction<string>)=>{
             state.users = state.users.filter(u=>u.id!==action.payload);
+        })
+        .addCase(fetchUser.fulfilled,(state,action:PayloadAction<UserReturnType>)=>{
+            state.user = action.payload;
         });
     }
 });

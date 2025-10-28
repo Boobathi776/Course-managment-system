@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, Typography } from "@mui/material";
-import type { Course } from "../../store/slices/courseSlice";
+import type { Course } from "../../../store/slices/courseSlice";
 
 type CardProps = {
   course: Course;

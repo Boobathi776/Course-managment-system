@@ -5,3 +5,5 @@ export const getAllCourses = (state:RootState)=>state.course?.courses;
 
 export const getAllUsers = (state:RootState)=>state.users.users;
 export const getEditingUser = (state:RootState)=>state.users.editingUser;
+
+export const getUser = (state:RootState)=>state.users.user;

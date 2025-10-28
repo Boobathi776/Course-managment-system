@@ -1,13 +1,20 @@
-import { Box, CircularProgress, Typography } from "@mui/material";
-import { grey } from "@mui/material/colors";
+import { Box, Typography } from "@mui/material";
+import { useEffect } from "react";
+import CourseList from "../../features/course/user/CourseList";
+import { useAppDispatch } from "../../store/store";
+import { fetchUser } from "../../store/slices/userSlice";
+import { fetchCourses } from "../../store/slices/courseSlice";
 
 const CoursePage = () => {
+
+  const dispatch = useAppDispatch();
+
+    useEffect(()=>{
+      dispatch(fetchUser());
+      dispatch(fetchCourses());
+    },[]);
+    
   return (
-    <div>
-      <Typography variant="button">Course page</Typography>
-      {/* <Box sx={{ display: "flex", backgroundColor:"grey[2]",justifyContent: "center", alignItems: "center", minHeight: "200px" }}>
-        <CircularProgress />
-      </Box> */}
       <Box
         sx={{
           display: "flex",
@@ -16,9 +23,9 @@ const CoursePage = () => {
           height: "100%",
         }}
       >
-        <CircularProgress size={50} thickness={4} color="primary" />
+        {/* <CircularProgress size={50} thickness={4} color="primary" /> */}
+        <CourseList/>
       </Box>
-    </div>
   );
 };
 

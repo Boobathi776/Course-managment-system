@@ -26,20 +26,12 @@ import { getAllUsers } from "../../store/selectors/overAllSelcetors";
 import { useNavigate } from "react-router-dom";
 import { userForm } from "../../routes/reactRoutes";
 import ConfirmPopUp from "../../shared/components/ConfirmPopUp";
+import { Delete, Edit } from "@mui/icons-material";
 
 const UserList = () => {
+
   const dispatch = useAppDispatch();
   const navigateTo = useNavigate();
-
-  const deleteQuestion = "Do you want to delete a User ?";
-  const [isDeleteConfirmOpen, setIsDeleteConfirmOpen] =
-    useState<boolean>(false);
-  const [deletingUserId, setDeleteUserId] = useState<string>("");
-
-  const onDeleteConfirm = useCallback(() => {
-    deletingUserId && dispatch(deleteUser(deletingUserId));
-    setIsDeleteConfirmOpen(false);
-  }, [deletingUserId]);
 
   useEffect(() => {
     dispatch(fetchAllUsers());
@@ -47,6 +39,16 @@ const UserList = () => {
 
   const users = useSelector(getAllUsers);
 
+  const [isDeleteConfirmOpen, setIsDeleteConfirmOpen] = useState<boolean>(false);
+  const [deletingUserId, setDeleteUserId] = useState<string>("");
+
+  const deleteQuestion = "Do you want to delete a User ?";
+
+  const onDeleteConfirm = useCallback(() => {
+    deletingUserId && dispatch(deleteUser(deletingUserId));
+    setIsDeleteConfirmOpen(false);
+  }, [deletingUserId]);
+  
   const handleEditClick = (user: UserReturnType): void => {
     dispatch(setEditingUser(user));
     navigateTo(userForm);
@@ -59,8 +61,7 @@ const UserList = () => {
 
   return (
     <>
-      <Box>
-        <TableContainer component={Paper} elevation={4} sx={{ width: "100%" }}>
+        <TableContainer component={Paper} elevation={4} sx={{width:"100%"}}>
           <Table>
             <TableHead>
               <TableRow>
@@ -99,17 +100,18 @@ const UserList = () => {
                         <Button
                           variant="contained"
                           color="warning"
-                          sx={{ mr: 2 }}
+                          sx={{ mr: 2,borderRadius:10 }}
                           onClick={() => handleEditClick(u)}
                         >
-                          Edit
+                         <Edit fontSize="small" sx={{mr:1}} />Edit
                         </Button>
                         <Button
                           variant="contained"
                           color="error"
+                          sx={{borderRadius:10}}
                           onClick={() => handleDeleteClick(u.id)}
                         >
-                          Delete
+                          <Delete fontSize="small" sx={{mr:1}} /> Delete
                         </Button>
                       </CenteredTableCell>
                     </TableRow>
@@ -118,7 +120,6 @@ const UserList = () => {
             </TableBody>
           </Table>
         </TableContainer>
-      </Box>
 
       {deletingUserId.length > 0 && (
         <ConfirmPopUp

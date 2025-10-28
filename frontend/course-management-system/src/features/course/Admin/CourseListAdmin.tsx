@@ -15,23 +15,23 @@ import {
 import { useCallback, useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { courseForm } from "../../routes/reactRoutes";
+import { courseForm } from "../../../routes/reactRoutes";
 import {
   CenteredTableCell,
   CenteredTableCellHeading,
-} from "../../shared/components/CenteredTableCell";
-import ConfirmPopUp from "../../shared/components/ConfirmPopUp";
-import { search } from "../../shared/functions/search";
-import { sort } from "../../shared/functions/sortFunction";
+} from "../../../shared/components/CenteredTableCell";
+import ConfirmPopUp from "../../../shared/components/ConfirmPopUp";
+import { search } from "../../../shared/functions/search";
+import { sort } from "../../../shared/functions/sortFunction";
 import {
   deleteCourse,
   fetchCourses,
   setEditingCourse,
   type Course,
-} from "../../store/slices/courseSlice";
-import { useAppDispatch } from "../../store/store";
+} from "../../../store/slices/courseSlice";
+import { useAppDispatch } from "../../../store/store";
 import { grey } from "@mui/material/colors";
-import { getAllCourses } from "../../store/selectors/overAllSelcetors";
+import { getAllCourses } from "../../../store/selectors/overAllSelcetors";
 
 const CourseList = () => {
   const [isFetching, setIsFetching] = useState<boolean>(false);
@@ -230,15 +230,16 @@ const CourseList = () => {
                     <CenteredTableCell>
                       <Button
                         variant="contained"
-                        color="primaryButton"
-                        sx={{ mr: 2 }}
+                        color="warning"
+                        sx={{ mr: 2 ,borderRadius:10}}
                         onClick={() => handleEditClick(c)}
                       >
                         Edit
                       </Button>
                       <Button
                         variant="contained"
-                        color="primaryButton"
+                        color="error"
+                        sx={{borderRadius:10}}
                         onClick={() => handleDeleteClick(c.id)}
                       >
                         Delete

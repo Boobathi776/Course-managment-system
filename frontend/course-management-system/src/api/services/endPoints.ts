@@ -16,6 +16,9 @@ export const PRIVATE = Object.freeze({
     // fetch all the users from the backend 
     GET_ALL_USERS : `User/users`,
     UPDATE_USER : `/User/update/`,
-    DELETE_USER : `/User/deleteUser/`
+    DELETE_USER : `/User/deleteUser/`,
 
+
+    // get single user 
+    GET_SINGLE_USER : `User/singleUser`
 });

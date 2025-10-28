@@ -132,9 +132,7 @@ const UserForm = () => {
   };
 
   return (
-    <Box
-      sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}
-    >
+    <Box sx={{width:"100%",height:"80vh",display:"flex",justifyContent:"center",alignItems:"center"}}>
       <CenterPaper sx={{ m: "auto", mb: 5 }}>
         <Typography variant="h5" textAlign="center" gutterBottom>
           User form
