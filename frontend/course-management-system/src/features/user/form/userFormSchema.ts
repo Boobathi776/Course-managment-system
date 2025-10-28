@@ -1,6 +1,6 @@
 import z, { email } from "zod";
 
-export const userFormShema = z.object({
+export const newUserFormShema = z.object({
   name: z
     .string()
     .regex(/^[a-zA-Z .]{3,150}$/, { message: "Enter a valid name" }),
@@ -48,4 +48,34 @@ export const userFormShema = z.object({
 }
 ,{message : "Confirm password not match with password",path:["confirmPassword"]});
 
-export type UserFormType = z.infer<typeof userFormShema>;
+export type NewUserFormType = z.infer<typeof newUserFormShema>;
+
+
+
+export const updateUserFormSchema = z.object({
+  name: z
+    .string()
+    .regex(/^[a-zA-Z .]{3,150}$/, { message: "Enter a valid name" }),
+  email: z.email("Enter a valid email address"),
+  dateOfBirth: z
+    .date()
+    .nullable()
+    .refine(
+      (dob) => {
+        if (dob !== null) {
+          const today = new Date();
+          const oneYearBefore = new Date(today).setFullYear(
+            today.getFullYear() - 1
+          );
+          return new Date(oneYearBefore) > dob;
+        }
+        return false;
+      },
+      { message: "Please choose a valid date of birth (minimum 1 age)" }
+    ),
+  roleId: z.boolean(),
+  isActive: z.boolean(),
+});
+
+
+export type UpdateUserFormType = z.infer<typeof updateUserFormSchema>;

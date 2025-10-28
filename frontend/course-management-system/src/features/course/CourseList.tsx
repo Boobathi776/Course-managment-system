@@ -26,12 +26,12 @@ import { sort } from "../../shared/functions/sortFunction";
 import {
   deleteCourse,
   fetchCourses,
-  getAllCourses,
   setEditingCourse,
   type Course,
 } from "../../store/slices/courseSlice";
 import { useAppDispatch } from "../../store/store";
 import { grey } from "@mui/material/colors";
+import { getAllCourses } from "../../store/selectors/overAllSelcetors";
 
 const CourseList = () => {
   const [isFetching, setIsFetching] = useState<boolean>(false);
@@ -72,8 +72,7 @@ const CourseList = () => {
   };
 
   const deleteQuestion = "Do you want to delete a course?";
-  const [isDeleteConfirmOpen, setIsDeleteConfirmOpen] =
-    useState<boolean>(false);
+  const [isDeleteConfirmOpen, setIsDeleteConfirmOpen] = useState<boolean>(false);
   const [deletingCourseId, setDeletingCourseId] = useState<number | null>();
 
   const onDeleteConfirm = useCallback(() => {
@@ -84,10 +83,6 @@ const CourseList = () => {
   const handleDeleteClick = (id: number) => {
     setIsDeleteConfirmOpen(true);
     setDeletingCourseId(id);
-  };
-
-  const handleAddCourseClick = () => {
-    navigator(courseForm);
   };
 
   const handleSortClick = (selectedKey: keyof Course) => {
@@ -120,19 +115,9 @@ const CourseList = () => {
   
   return (
     <>
-      <Button
-        onClick={handleAddCourseClick}
-        variant="contained"
-        color="secondary"
-        sx={{ m: 3 }}
-      >
-        Add course
-      </Button>
-
       <TableContainer component={Paper} elevation={4} sx={{ width: "100%",backgroundColor:grey[100] }}>
         <Table sx={{ width: "100%" }}>
           <TableHead>
-
             <TableRow>
               <CenteredTableCellHeading>
                 Name

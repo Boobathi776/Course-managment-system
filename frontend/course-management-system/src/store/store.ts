@@ -1,10 +1,10 @@
-import { persistReducer, persistStore } from "redux-persist";
-import {combineReducers, configureStore} from "@reduxjs/toolkit"
+import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { useDispatch } from "react-redux";
-import storage from "redux-persist/lib/storage"
-import { loginReducer } from "./slices/loginSlice";
+import { persistReducer, persistStore } from "redux-persist";
+import storage from "redux-persist/lib/storage";
 import { courseReducer } from "./slices/courseSlice";
-import { useReducer } from "react";
+import loginReducer from "./slices/loginSlice";
+import { userReducer } from "./slices/userSlice";
 
 const persistConfig = {
     key : "root",
@@ -15,7 +15,7 @@ const persistConfig = {
 const rootReducer = combineReducers({
     login : loginReducer,
     course:courseReducer,
-    users :useReducer,
+    users :userReducer,
 });
 
 const persistedReducer = persistReducer(persistConfig,rootReducer);

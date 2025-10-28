@@ -1,10 +1,11 @@
 import { Box, Button, Typography } from "@mui/material";
-import { getAccessToken, logout } from "../store/slices/loginSlice";
+import { logout } from "../store/slices/loginSlice";
 import { useSelector } from "react-redux";
 import { tokenDecoder } from "../shared/functions/tokenDecocer";
 import { useAppDispatch } from "../store/store";
 import { useNavigate } from "react-router-dom";
 import { loginPage } from "../routes/reactRoutes";
+import { getAccessToken } from "../store/selectors/overAllSelcetors";
 
 const Profile = () => {
   const accessToken = useSelector(getAccessToken);

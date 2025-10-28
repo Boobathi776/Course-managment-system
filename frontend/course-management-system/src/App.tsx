@@ -9,6 +9,7 @@ import {
   enrollmentPage,
   loginPage,
   profilePage,
+  userForm,
 } from "./routes/reactRoutes";
 import ProtectedRoutes from "./routes/ProtectedRoutes";
 import UserDashboard from "./pages/admin/UserDashboard";
@@ -18,10 +19,11 @@ import EnrollementPage from "./pages/user/EnrollementPage";
 import RootLayout from "./layout/RootLayout";
 import Home from "./pages/Home";
 import { useSelector } from "react-redux";
-import { getAccessToken } from "./store/slices/loginSlice";
 import { tokenDecoder } from "./shared/functions/tokenDecocer";
 import Profile from "./pages/Profile";
 import CourseForm from "./features/course/form/CourseForm";
+import UserForm from "./features/user/form/UserForm";
+import { getAccessToken } from "./store/selectors/overAllSelcetors";
 
 function App() {
   const accessToken = useSelector(getAccessToken);
@@ -30,6 +32,7 @@ function App() {
   const adminRoutes = (
     <Route element={<ProtectedRoutes isAuthenticated={accessToken.length>0} />}>
       <Route path={courseForm} element={<CourseForm/>}/>
+      <Route path={userForm} element={<UserForm/>}></Route>
       <Route path={adminUserDashBoard} element={<UserDashboard />}></Route>
       <Route path={adminCourseDashBoard} element={<CourseDashboard />}></Route>
       <Route path={profilePage} element={<Profile />} />

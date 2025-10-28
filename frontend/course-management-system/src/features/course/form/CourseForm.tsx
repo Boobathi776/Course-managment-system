@@ -1,8 +1,6 @@
-import { Controller, useForm } from "react-hook-form";
-import { FormBox } from "../../../shared/components/FormBox";
-import { courseFromSchema, type CourseFromScemaType } from "./courseSchema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import {
+  Box,
   Button,
   FormControl,
   FormHelperText,
@@ -10,12 +8,15 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import { CenterPaper } from "../../../shared/components/CenterPaper";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import { useAppDispatch, type RootState } from "../../../store/store";
+import { Controller, useForm } from "react-hook-form";
+import { useDispatch, useSelector } from "react-redux";
+import { CenterPaper } from "../../../shared/components/CenterPaper";
+import { FormBox } from "../../../shared/components/FormBox";
 import { addNewCourse, setEditingCourse, updateCourse } from "../../../store/slices/courseSlice";
-import { useSelector } from "react-redux";
+import { type RootState, type AppDispatch } from "../../../store/store";
+import { courseFromSchema, type CourseFromScemaType } from "./courseSchema";
 
 const defaultValue: CourseFromScemaType = {
   name: "",
@@ -31,6 +32,7 @@ const CourseForm = () => {
   );
 
   let currentEditingCouse = editingCourse;
+
   if(editingCourse)
   {
       currentEditingCouse = {...editingCourse,startDate:new Date(editingCourse.startDate)}
@@ -39,7 +41,6 @@ const CourseForm = () => {
   const {
     control,
     formState: { errors },
-    setFocus,
     reset,
     handleSubmit,
   } = useForm<CourseFromScemaType>({
@@ -49,7 +50,7 @@ const CourseForm = () => {
     reValidateMode: "onBlur",
   });
 
-  const dispatch = useAppDispatch();
+  const dispatch = useDispatch<AppDispatch>();
 
 
   const onSubmit = async (formData: CourseFromScemaType) => {
@@ -84,7 +85,8 @@ const CourseForm = () => {
   };
 
   return (
-    <CenterPaper sx={{ m: "auto", mb: 5 }}>
+    <Box sx={{width:"100%",height:"80vh",display:"flex",justifyContent:"center",alignItems:"center"}}>
+    <CenterPaper sx={{ m: "auto", mb: 5 }} elevation={10}>
       <FormBox component="form" onSubmit={handleSubmit(onSubmit)}>
         <Typography variant="h5">Course form</Typography>
 
@@ -95,6 +97,7 @@ const CourseForm = () => {
             return (
               <TextField
                 fullWidth
+                size="small"
                 type="text"
                 label="Name*"
                 placeholder="Enter the course name"
@@ -136,6 +139,7 @@ const CourseForm = () => {
           render={({ field }) => {
             return (
               <TextField
+              size="small"
                 {...field}
                 fullWidth
                 type="number"
@@ -157,6 +161,7 @@ const CourseForm = () => {
           render={({ field }) => {
             return (
               <TextField
+              size="small"
                 fullWidth
                 {...field}
                 value={field.value === 0 ? "" : field.value}
@@ -177,6 +182,7 @@ const CourseForm = () => {
         </Button>
       </FormBox>
     </CenterPaper>
+    </Box>
   );
 };
 

@@ -2,7 +2,6 @@ import { createAsyncThunk, createSlice, type PayloadAction } from "@reduxjs/tool
 import { api } from "../../api/services/apiInstance";
 import { PRIVATE } from "../../api/services/endPoints";
 import type { CourseFromScemaType } from "../../features/course/form/courseSchema";
-import { type RootState } from "../store";
 
 export type Course = {
     id : number,
@@ -125,5 +124,4 @@ const courseSlice = createSlice({
 });
 
 export const courseReducer = courseSlice.reducer;
-export const getAllCourses = (state:RootState)=>state.course?.courses;
 export const {setEditingCourse} = courseSlice.actions;

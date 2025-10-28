@@ -5,11 +5,13 @@ export const registerPage =`/register`;
 
 // amdin protected pages
 export const adminCourseDashBoard = `/course-dashboard`;
-export const adminUserDashBoard = `/user-dashboard`;
 export const courseForm = `/course-form`;
+export const adminUserDashBoard = `/user-dashboard`;
+export const userForm= `/user-form`;
 
 // user protected pages
 export const coursePage = `/course`;
 export const enrollmentPage = `/enrollment`;
 export const profilePage = `/profile`;
+
 

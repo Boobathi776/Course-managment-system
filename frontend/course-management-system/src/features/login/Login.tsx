@@ -1,12 +1,26 @@
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Box, Button, FormHelperText, TextField, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  FormHelperText,
+  TextField,
+  Typography,
+} from "@mui/material";
 import { Controller, useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
-import { adminCourseDashBoard, registerPage } from "../../routes/reactRoutes";
+import {
+  adminCourseDashBoard,
+  coursePage,
+  homePage,
+  registerPage,
+} from "../../routes/reactRoutes";
 import { CenterPaper } from "../../shared/components/CenterPaper";
 import { FormBox } from "../../shared/components/FormBox";
+import { tokenDecoder } from "../../shared/functions/tokenDecocer";
+// import { loginUser } from "../../store/slices/loginSlice";
+import { store, type AppDispatch } from "../../store/store";
 import { loginSchema, type LoginFormType } from "./loginSchema";
-import { useAppDispatch } from "../../store/store";
+import { useDispatch } from "react-redux";
 import { loginUser } from "../../store/slices/loginSlice";
 
 const defaulValue: LoginFormType = {
@@ -28,15 +42,21 @@ const Login = () => {
     reValidateMode: "onChange",
   });
   const navigator = useNavigate();
-  const dispatch = useAppDispatch();
+  const dispatch = useDispatch<AppDispatch>();
 
   const handleFormSubmit = async (formData: LoginFormType) => {
     console.log(formData);
     var response = await dispatch(loginUser(formData));
     if (loginUser.fulfilled.match(response)) {
-      console.log(response.payload);
       reset(defaulValue);
-      navigator(adminCourseDashBoard);
+      const state = store.getState();
+      const token = state.login.accessToken;
+      var decodedToken = token ? tokenDecoder(token) : null;
+      if (decodedToken)
+        decodedToken.role === "Admin"
+          ? navigator(adminCourseDashBoard)
+          : navigator(coursePage);
+      else navigator(homePage);
     } else if (loginUser.rejected.match(response)) {
       console.log(response.payload);
     }

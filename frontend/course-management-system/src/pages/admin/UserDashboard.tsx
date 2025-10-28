@@ -1,12 +1,29 @@
-import { Box } from '@mui/material'
-import UserForm from '../../features/user/form/UserForm'
+import { Box, Button } from "@mui/material";
+import { useNavigate } from "react-router-dom";
+import UserList from "../../features/user/UserList";
+import { userForm } from "../../routes/reactRoutes";
 
 const UserDashboard = () => {
-  return (
-    <Box sx={{display:"flex",justifyContent:"center",alignItems:"center"}}>
-      <UserForm/>
-    </Box>
-  )
-}
+  const navigateTo = useNavigate();
 
-export default UserDashboard
+  const handleAddUserClick = () => {
+    navigateTo(userForm);
+  };
+
+  return (
+    <>
+      <Box p={4} display="flex" justifyContent="center" alignItems="center">
+        <Button
+          variant="contained"
+          color="success"
+          onClick={handleAddUserClick}
+        >
+          Add User
+        </Button>
+      </Box>
+      <UserList />
+    </>
+  );
+};
+
+export default UserDashboard;

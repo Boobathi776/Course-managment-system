@@ -2,8 +2,8 @@ import { AppBar, Button, Toolbar, Typography } from "@mui/material";
 import { useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 import { adminCourseDashBoard, adminUserDashBoard, coursePage, enrollmentPage, loginPage, profilePage } from "../../routes/reactRoutes";
-import { getAccessToken } from "../../store/slices/loginSlice";
 import { tokenDecoder } from "../functions/tokenDecocer";
+import { getAccessToken } from "../../store/selectors/overAllSelcetors";
 
 const Navbar = () => {
   const adminPages = [

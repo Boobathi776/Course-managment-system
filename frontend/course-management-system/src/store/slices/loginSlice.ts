@@ -1,8 +1,7 @@
 import { createAsyncThunk, createSlice, type PayloadAction } from "@reduxjs/toolkit";
-import type { LoginFormType } from "../../features/login/loginSchema";
+import {type LoginFormType } from "../../features/login/loginSchema";
 import { api } from "../../api/services/apiInstance";
 import { PUBLIC } from "../../api/services/endPoints";
-import type { RootState } from "../store";
 
 export type TokenType = {
     accessToken : string,
@@ -55,6 +54,5 @@ const loginSlice = createSlice({
     }
 });
 
-export const loginReducer = loginSlice.reducer;
 export const {logout,updateToken} = loginSlice.actions;
-export const getAccessToken = (state:RootState)=>state.login?.accessToken;
+export default loginSlice.reducer;

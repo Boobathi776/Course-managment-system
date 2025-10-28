@@ -22,7 +22,7 @@ declare module "@mui/material/Button"
 export const customTheme = createTheme({
     palette:{
         primary:{   
-            main:"#0d0c26ff",
+            main:"#000000ff",
         },
         primaryButton:{
             main:"#0c049eff",
