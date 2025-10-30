@@ -1,31 +1,48 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import { useEffect } from "react";
-import CourseList from "../../features/course/user/CourseList";
+import { useSelector } from "react-redux";
+import CourseCard from "../../features/course/user/CourseCard";
+import { ageCalculator } from "../../shared/functions/ageCalculator";
+import {
+  getCoursesForUser,
+  getUser,
+} from "../../store/selectors/overAllSelcetors";
+import type { Course } from "../../store/slices/courseSlice";
+import { fetchCoursesForUsers } from "../../store/slices/enrollmentSlice";
 import { useAppDispatch } from "../../store/store";
-import { fetchUser } from "../../store/slices/userSlice";
-import { fetchCourses } from "../../store/slices/courseSlice";
 
 const CoursePage = () => {
-
   const dispatch = useAppDispatch();
 
-    useEffect(()=>{
-      dispatch(fetchUser());
-      dispatch(fetchCourses());
-    },[]);
-    
+  useEffect(() => {
+    dispatch(fetchCoursesForUsers());
+  }, []);
+
+  const user = useSelector(getUser);
+
+  let dateofBirth = user ? user.dateOfBirth : new Date();
+
+  const age = ageCalculator(dateofBirth);
+
+  const courses: Course[] = useSelector(getCoursesForUser);
+
   return (
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          height: "100%",
-        }}
-      >
-        {/* <CircularProgress size={50} thickness={4} color="primary" /> */}
-        <CourseList/>
+    <Box
+      sx={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "100%",
+      }}
+    >
+      {/* <CircularProgress size={50} thickness={4} color="primary" /> */}
+      <Box sx={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 5 }}>
+        {courses &&
+          courses.map((course) => {
+            return <CourseCard key={course.id} course={course} age={age} />;
+          })}
       </Box>
+    </Box>
   );
 };
 

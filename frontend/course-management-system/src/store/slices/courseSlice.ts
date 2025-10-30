@@ -9,7 +9,8 @@ export type Course = {
     startDate : Date,
     courseDuration : number,
     minimumAgeRequired : number,
-    createdOn : Date
+    createdOn : Date,
+    enrolledCount : number
 };
 
 type CourseInitialState = {

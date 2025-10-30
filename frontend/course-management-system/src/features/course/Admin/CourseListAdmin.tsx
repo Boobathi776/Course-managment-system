@@ -154,6 +154,19 @@ const CourseList = () => {
                 </IconButton>
               </CenteredTableCellHeading>
               <CenteredTableCellHeading>
+                Enrollment count
+                <IconButton
+                  onClick={() => handleSortClick("enrolledCount")}
+                >
+                  {sortOptions.order === "asc" &&
+                  sortOptions.key === "enrolledCount" ? (
+                    <ArrowDownwardSharp />
+                  ) : (
+                    <ArrowUpwardSharp />
+                  )}
+                </IconButton>
+              </CenteredTableCellHeading>
+              <CenteredTableCellHeading>
                 Start date
                 <IconButton onClick={() => handleSortClick("startDate")}>
                   {sortOptions.order === "asc" &&
@@ -223,6 +236,9 @@ const CourseList = () => {
                     <CenteredTableCell>{c.courseDuration}</CenteredTableCell>
                     <CenteredTableCell>
                       {c.minimumAgeRequired}
+                    </CenteredTableCell>
+                    <CenteredTableCell>
+                      {c.enrolledCount}
                     </CenteredTableCell>
                     <CenteredTableCell>
                       {new Date(c.startDate).toLocaleDateString()}

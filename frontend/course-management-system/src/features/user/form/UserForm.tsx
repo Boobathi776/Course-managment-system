@@ -232,9 +232,10 @@ const UserForm = () => {
                     dateFormat="dd-MM-yyyy"
                     selected={field.value}
                     onChange={(newDate) => field.onChange(newDate)}
+                    yearDropdownItemNumber={30}
                     showMonthDropdown
                     showYearDropdown
-                    scrollableMonthYearDropdown
+                    scrollableYearDropdown
                   ></DatePicker>
                   <FormHelperText>{errors.dateOfBirth?.message}</FormHelperText>
                 </FormControl>

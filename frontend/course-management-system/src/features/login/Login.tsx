@@ -25,6 +25,7 @@ import { useDispatch } from "react-redux";
 import { loginUser } from "../../store/slices/loginSlice";
 import { useRef, useState } from "react";
 import Toast from "../../shared/components/Toast";
+import { fetchUser } from "../../store/slices/userSlice";
 
 const defaulValue: LoginFormType = {
   email: "",
@@ -62,6 +63,7 @@ const Login = () => {
     var response = await dispatch(loginUser(formData));
     if (loginUser.fulfilled.match(response)) {
       reset(defaulValue);
+      dispatch(fetchUser());
       const state = store.getState();
       const token = state.login.accessToken;
       var decodedToken = token ? tokenDecoder(token) : null;

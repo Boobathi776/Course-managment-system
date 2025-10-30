@@ -55,7 +55,7 @@ function App() {
         <Routes>
           <Route path="/" element={<RootLayout />}>
             <Route index element={<Home />} />
-            <Route path={loginPage} element={<Login />} />
+            {!accessToken && <Route path={loginPage} element={<Login />} />}
             {routes}
           </Route>
           {/* <Route path="*" element={}/> */}
