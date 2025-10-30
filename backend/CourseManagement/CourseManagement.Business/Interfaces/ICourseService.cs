@@ -12,7 +12,8 @@ namespace CourseManagement.Business.Interfaces
     public interface ICourseService
     {
         Task<Course> GetById(int id);
-        Task<GenericResponseDto<IEnumerable<Course>>> GetAllCoursesAsync();
+        Task<GenericResponseDto<IEnumerable<Course>>> GetAllCoursesForUserAsync();
+        Task<GenericResponseDto<IEnumerable<AdminCourseDto>>> GetAllCoursesAsync();
         Task<GenericResponseDto<Course>> AddNewCourse(CourseDto newCourse);
         Task<GenericResponseDto<Course>> UpdateCourseAsync(Course course);
         Task<GenericResponseDto<bool>> DeleteCourse(int id);

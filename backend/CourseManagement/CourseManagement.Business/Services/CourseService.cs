@@ -1,4 +1,5 @@
-﻿using CourseManagement.Business.Dto.RequestDto;
+﻿using AutoMapper;
+using CourseManagement.Business.Dto.RequestDto;
 using CourseManagement.Business.Dto.ResponseDto;
 using CourseManagement.Business.Interfaces;
 using CourseManagement.DataAccess.Interfaces;
@@ -16,11 +17,12 @@ namespace CourseManagement.Business.Services
     {
         private readonly IGenericRepository<Course> _genericRepository;
         private readonly ICourseRepository _courseRepository;
-        public CourseService(ICourseRepository courseRepository)
+        private readonly IMapper _mapper;
+        public CourseService(ICourseRepository courseRepository,IMapper mapper)
         {
             _courseRepository = courseRepository;
+            _mapper = mapper;
         }
-
 
         public async Task<Course> GetById(int id)
         {
@@ -28,7 +30,7 @@ namespace CourseManagement.Business.Services
             return course != null ? course : null;
         }
 
-        public  async Task<GenericResponseDto<IEnumerable<Course>>> GetAllCoursesAsync()
+        public async Task<GenericResponseDto<IEnumerable<Course>>> GetAllCoursesForUserAsync()
         {
             var courses = await _courseRepository.GetAllAsync();
             return new GenericResponseDto<IEnumerable<Course>>
@@ -37,6 +39,19 @@ namespace CourseManagement.Business.Services
                 Success = true,
                 Message = "All courses find",
                 Data = courses
+            };
+        }
+
+        public  async Task<GenericResponseDto<IEnumerable<AdminCourseDto>>> GetAllCoursesAsync()
+        {
+            var courses = await _courseRepository.GetAllCoursesAync();
+            var mappedCourses = _mapper.Map<IEnumerable<AdminCourseDto>>(courses);  
+            return new GenericResponseDto<IEnumerable<AdminCourseDto>>
+            {
+                StatusCode = 200,
+                Success = true,
+                Message = "All courses find",
+                Data = mappedCourses
             };
         }
 

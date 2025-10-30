@@ -43,6 +43,7 @@ create table Enrollments(
 UserId Uniqueidentifier not null foreign key references Users(Id) on delete cascade,
 CourseId int not null foreign key references Courses(Id) on delete cascade,
 EnrolledOn datetime not null default getdate(),
+constraint PK_Enrollments primary key (UserId,CourseId),
 );
 
 go;
@@ -77,3 +78,8 @@ ContentType varchar(100) not null
 
 select * from FileUploads;
 
+
+
+--use CourseManagement;
+--select * from Users;
+--select * from courses;

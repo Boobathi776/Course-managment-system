@@ -13,8 +13,8 @@ namespace CourseManagement.DataAccess.Repositories
 {
     public class UserRepository:GenericRepository<User> , IUserRepository
     {
-        private readonly CoursedbContext _context;
-        public UserRepository(CoursedbContext context) : base(context)
+        private readonly CourseDbContext _context;
+        public UserRepository(CourseDbContext context) : base(context)
         {
             _context = context;
         }

@@ -19,7 +19,7 @@ namespace CourseManagement.Api.Controllers
             _userService = userService;
         }
 
-        [Authorize(Roles = "User")]
+        [Authorize(Roles = "User,Admin")]
         [HttpGet("singleUser")]
         public async Task<ActionResult<GenericResponseDto<UserDto>>> Get()
         {

@@ -16,4 +16,6 @@ public partial class Course
     public short MinimumAgeRequired { get; set; }
 
     public DateTime CreatedOn { get; set; }
+
+    public virtual ICollection<Enrollment> Enrollments { get; set; } = new List<Enrollment>();
 }

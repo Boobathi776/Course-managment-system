@@ -13,10 +13,10 @@ namespace CourseManagement.DataAccess.Repositories
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
-        private readonly CoursedbContext _context;
+        private readonly CourseDbContext _context;
         private readonly DbSet<T> _dbSet;
 
-        public GenericRepository(CoursedbContext context)
+        public GenericRepository(CourseDbContext context)
         {
             _context = context;
             _dbSet = _context.Set<T>();

@@ -19,7 +19,7 @@ namespace CourseManagement.Api
             var builder = WebApplication.CreateBuilder(args);
 
 
-            builder.Services.AddDbContext<CoursedbContext>(options =>
+            builder.Services.AddDbContext<CourseDbContext>(options =>
             {
                 options.UseSqlServer(builder.Configuration.GetConnectionString("CourseDb"));
             });
@@ -44,8 +44,11 @@ namespace CourseManagement.Api
             builder.Services.AddScoped<JwtTokenService, JwtTokenService>();
             builder.Services.AddScoped<ICourseService, CourseService>();
             builder.Services.AddScoped<IAccountService, AccountService>();
-
             builder.Services.AddScoped<IUserService,UserService>();
+
+            builder.Services.AddScoped<IEnrollmentRepository,EnrollmentRepository>();   
+            builder.Services.AddScoped<IEnrollmentService, EnrollmentService>();
+
             // Add services to the container.
 
             builder.Services.AddAuthentication(options =>

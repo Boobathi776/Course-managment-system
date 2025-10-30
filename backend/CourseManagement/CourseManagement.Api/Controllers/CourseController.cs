@@ -34,9 +34,8 @@ namespace CourseManagement.Api.Controllers
             };
         }
 
-        [AllowAnonymous]
         [HttpGet("courses")]
-        public async Task<ActionResult<IEnumerable<Course>>> GetAll()
+        public async Task<ActionResult<GenericResponseDto<IEnumerable<AdminCourseDto>>>> GetAll()
         {
             var response = await _courseService.GetAllCoursesAsync();
             return response.Success ? Ok(response) : BadRequest();  

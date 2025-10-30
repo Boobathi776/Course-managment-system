@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 
 namespace CourseManagement.DataAccess.Interfaces
 {
-    public interface ICourseRepository : IMyIGenericRepository<Course>
+    public interface IEnrollmentRepository : IGenericRepository<Enrollment> 
     {
-        Task<IEnumerable<Course>> GetAllCoursesAync();
+        Task<IEnumerable<Enrollment>> GetEnrollmentsByUserIdAsync(Guid userId);
+        Task<int> DeleteEnrollmentAsync(Guid userId, int courseId);
     }
 }

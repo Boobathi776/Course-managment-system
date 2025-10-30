@@ -20,6 +20,9 @@ namespace CourseManagement.Business.Mappings
                 .ForMember(des=>des.IsAdmin , opt=>opt.MapFrom(src=>src.RoleId == (int)Roles.Admin ? true : false)).ReverseMap();
 
             CreateMap<UpdateUserDto, User>();
+
+            CreateMap<Course, AdminCourseDto>()
+                .ForMember(dest => dest.enrolledCount, opt => opt.MapFrom(src => src.Enrollments.Count()));
         }
     }
 }

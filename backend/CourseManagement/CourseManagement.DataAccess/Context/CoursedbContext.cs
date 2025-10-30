@@ -5,13 +5,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CourseManagement.DataAccess.Context;
 
-public partial class CoursedbContext : DbContext
+public partial class CourseDbContext : DbContext
 {
-    public CoursedbContext()
+    public CourseDbContext()
     {
     }
 
-    public CoursedbContext(DbContextOptions<CoursedbContext> options)
+    public CourseDbContext(DbContextOptions<CourseDbContext> options)
         : base(options)
     {
     }
@@ -19,6 +19,8 @@ public partial class CoursedbContext : DbContext
     public virtual DbSet<Course> Courses { get; set; }
 
     public virtual DbSet<Enrollment> Enrollments { get; set; }
+
+    public virtual DbSet<FileUpload> FileUploads { get; set; }
 
     public virtual DbSet<Role> Roles { get; set; }
 
@@ -28,7 +30,7 @@ public partial class CoursedbContext : DbContext
     {
         modelBuilder.Entity<Course>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Courses__3214EC07B9115223");
+            entity.HasKey(e => e.Id).HasName("PK__Courses__3214EC0764DB48D9");
 
             entity.Property(e => e.CreatedOn)
                 .HasDefaultValueSql("(getdate())")
@@ -43,24 +45,39 @@ public partial class CoursedbContext : DbContext
 
         modelBuilder.Entity<Enrollment>(entity =>
         {
-            entity.HasNoKey();
+            entity.HasKey(e => new { e.UserId, e.CourseId });
 
             entity.Property(e => e.EnrolledOn)
                 .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime");
 
-            entity.HasOne(d => d.Course).WithMany()
+            entity.HasOne(d => d.Course).WithMany(p => p.Enrollments)
                 .HasForeignKey(d => d.CourseId)
-                .HasConstraintName("FK__Enrollmen__Cours__59063A47");
+                .HasConstraintName("FK__Enrollmen__Cours__03F0984C");
 
-            entity.HasOne(d => d.User).WithMany()
+            entity.HasOne(d => d.User).WithMany(p => p.Enrollments)
                 .HasForeignKey(d => d.UserId)
-                .HasConstraintName("FK__Enrollmen__UserI__5812160E");
+                .HasConstraintName("FK__Enrollmen__UserI__02FC7413");
+        });
+
+        modelBuilder.Entity<FileUpload>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__FileUplo__3214EC0795BD6F8B");
+
+            entity.Property(e => e.ContentType)
+                .HasMaxLength(100)
+                .IsUnicode(false);
+            entity.Property(e => e.FileName)
+                .HasMaxLength(100)
+                .IsUnicode(false);
+            entity.Property(e => e.FilePath)
+                .HasMaxLength(100)
+                .IsUnicode(false);
         });
 
         modelBuilder.Entity<Role>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Roles__3214EC071C215C71");
+            entity.HasKey(e => e.Id).HasName("PK__Roles__3214EC07D56F571E");
 
             entity.Property(e => e.RoleName)
                 .HasMaxLength(100)
@@ -69,9 +86,9 @@ public partial class CoursedbContext : DbContext
 
         modelBuilder.Entity<User>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Users__3214EC077B076E8F");
+            entity.HasKey(e => e.Id).HasName("PK__Users__3214EC078B73D655");
 
-            entity.HasIndex(e => e.Email, "UQ__Users__A9D10534FDA868D0").IsUnique();
+            entity.HasIndex(e => e.Email, "UQ__Users__A9D1053467F87501").IsUnique();
 
             entity.Property(e => e.Id).HasDefaultValueSql("(newsequentialid())");
             entity.Property(e => e.CreatedOn)

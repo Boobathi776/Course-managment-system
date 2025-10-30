@@ -3,20 +3,116 @@
   "WorkspaceRootPath": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C170CDF0-60F7-4677-9B19-7A5CA945F599}|CourseManagement.DataAccess\\CourseManagement.DataAccess.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.dataaccess\\repositories\\enrollmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C170CDF0-60F7-4677-9B19-7A5CA945F599}|CourseManagement.DataAccess\\CourseManagement.DataAccess.csproj|solutionrelative:coursemanagement.dataaccess\\repositories\\enrollmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.business\\services\\enrollmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|solutionrelative:coursemanagement.business\\services\\enrollmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.business\\interfaces\\ienrollmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|solutionrelative:coursemanagement.business\\interfaces\\ienrollmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0B6DC69-10BD-428C-A2CF-2EDE4608F73F}|CourseManagement.Api\\CourseManagement.Api.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.api\\controllers\\enrollmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0B6DC69-10BD-428C-A2CF-2EDE4608F73F}|CourseManagement.Api\\CourseManagement.Api.csproj|solutionrelative:coursemanagement.api\\controllers\\enrollmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D0B6DC69-10BD-428C-A2CF-2EDE4608F73F}|CourseManagement.Api\\CourseManagement.Api.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D0B6DC69-10BD-428C-A2CF-2EDE4608F73F}|CourseManagement.Api\\CourseManagement.Api.csproj|solutionrelative:coursemanagement.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0B6DC69-10BD-428C-A2CF-2EDE4608F73F}|CourseManagement.Api\\CourseManagement.Api.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.api\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0B6DC69-10BD-428C-A2CF-2EDE4608F73F}|CourseManagement.Api\\CourseManagement.Api.csproj|solutionrelative:coursemanagement.api\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D0B6DC69-10BD-428C-A2CF-2EDE4608F73F}|CourseManagement.Api\\CourseManagement.Api.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.api\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D0B6DC69-10BD-428C-A2CF-2EDE4608F73F}|CourseManagement.Api\\CourseManagement.Api.csproj|solutionrelative:coursemanagement.api\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.business\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|solutionrelative:coursemanagement.business\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.business\\interfaces\\icourseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|solutionrelative:coursemanagement.business\\interfaces\\icourseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.business\\services\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|solutionrelative:coursemanagement.business\\services\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.business\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|solutionrelative:coursemanagement.business\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C170CDF0-60F7-4677-9B19-7A5CA945F599}|CourseManagement.DataAccess\\CourseManagement.DataAccess.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.dataaccess\\interfaces\\icourserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C170CDF0-60F7-4677-9B19-7A5CA945F599}|CourseManagement.DataAccess\\CourseManagement.DataAccess.csproj|solutionrelative:coursemanagement.dataaccess\\interfaces\\icourserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C170CDF0-60F7-4677-9B19-7A5CA945F599}|CourseManagement.DataAccess\\CourseManagement.DataAccess.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.dataaccess\\repositories\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C170CDF0-60F7-4677-9B19-7A5CA945F599}|CourseManagement.DataAccess\\CourseManagement.DataAccess.csproj|solutionrelative:coursemanagement.dataaccess\\repositories\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C170CDF0-60F7-4677-9B19-7A5CA945F599}|CourseManagement.DataAccess\\CourseManagement.DataAccess.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.dataaccess\\repositories\\mygenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C170CDF0-60F7-4677-9B19-7A5CA945F599}|CourseManagement.DataAccess\\CourseManagement.DataAccess.csproj|solutionrelative:coursemanagement.dataaccess\\repositories\\mygenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C170CDF0-60F7-4677-9B19-7A5CA945F599}|CourseManagement.DataAccess\\CourseManagement.DataAccess.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.dataaccess\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C170CDF0-60F7-4677-9B19-7A5CA945F599}|CourseManagement.DataAccess\\CourseManagement.DataAccess.csproj|solutionrelative:coursemanagement.dataaccess\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C170CDF0-60F7-4677-9B19-7A5CA945F599}|CourseManagement.DataAccess\\CourseManagement.DataAccess.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.dataaccess\\interfaces\\imyigenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C170CDF0-60F7-4677-9B19-7A5CA945F599}|CourseManagement.DataAccess\\CourseManagement.DataAccess.csproj|solutionrelative:coursemanagement.dataaccess\\interfaces\\imyigenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.business\\dto\\responsedto\\admincoursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|solutionrelative:coursemanagement.business\\dto\\responsedto\\admincoursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.business\\dto\\requestdto\\coursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|solutionrelative:coursemanagement.business\\dto\\requestdto\\coursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0B6DC69-10BD-428C-A2CF-2EDE4608F73F}|CourseManagement.Api\\CourseManagement.Api.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0B6DC69-10BD-428C-A2CF-2EDE4608F73F}|CourseManagement.Api\\CourseManagement.Api.csproj|solutionrelative:coursemanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C170CDF0-60F7-4677-9B19-7A5CA945F599}|CourseManagement.DataAccess\\CourseManagement.DataAccess.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.dataaccess\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C170CDF0-60F7-4677-9B19-7A5CA945F599}|CourseManagement.DataAccess\\CourseManagement.DataAccess.csproj|solutionrelative:coursemanagement.dataaccess\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C170CDF0-60F7-4677-9B19-7A5CA945F599}|CourseManagement.DataAccess\\CourseManagement.DataAccess.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.dataaccess\\context\\coursedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C170CDF0-60F7-4677-9B19-7A5CA945F599}|CourseManagement.DataAccess\\CourseManagement.DataAccess.csproj|solutionrelative:coursemanagement.dataaccess\\context\\coursedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.business\\dto\\responsedto\\genericresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|solutionrelative:coursemanagement.business\\dto\\responsedto\\genericresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C170CDF0-60F7-4677-9B19-7A5CA945F599}|CourseManagement.DataAccess\\CourseManagement.DataAccess.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.dataaccess\\interfaces\\ienrollmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C170CDF0-60F7-4677-9B19-7A5CA945F599}|CourseManagement.DataAccess\\CourseManagement.DataAccess.csproj|solutionrelative:coursemanagement.dataaccess\\interfaces\\ienrollmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.business\\dto\\responsedto\\enrollmentresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|solutionrelative:coursemanagement.business\\dto\\responsedto\\enrollmentresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C170CDF0-60F7-4677-9B19-7A5CA945F599}|CourseManagement.DataAccess\\CourseManagement.DataAccess.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.dataaccess\\interfaces\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C170CDF0-60F7-4677-9B19-7A5CA945F599}|CourseManagement.DataAccess\\CourseManagement.DataAccess.csproj|solutionrelative:coursemanagement.dataaccess\\interfaces\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.business\\dto\\requestdto\\enrollmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|solutionrelative:coursemanagement.business\\dto\\requestdto\\enrollmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.business\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|solutionrelative:coursemanagement.business\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C170CDF0-60F7-4677-9B19-7A5CA945F599}|CourseManagement.DataAccess\\CourseManagement.DataAccess.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.dataaccess\\models\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C170CDF0-60F7-4677-9B19-7A5CA945F599}|CourseManagement.DataAccess\\CourseManagement.DataAccess.csproj|solutionrelative:coursemanagement.dataaccess\\models\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.business\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|solutionrelative:coursemanagement.business\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.business\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,10 +121,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.business\\interfaces\\iaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|solutionrelative:coursemanagement.business\\interfaces\\iaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0B6DC69-10BD-428C-A2CF-2EDE4608F73F}|CourseManagement.Api\\CourseManagement.Api.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.api\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0B6DC69-10BD-428C-A2CF-2EDE4608F73F}|CourseManagement.Api\\CourseManagement.Api.csproj|solutionrelative:coursemanagement.api\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Git-hub\\CourseManagementSystem\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
@@ -40,14 +132,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C170CDF0-60F7-4677-9B19-7A5CA945F599}|CourseManagement.DataAccess\\CourseManagement.DataAccess.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.dataaccess\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C170CDF0-60F7-4677-9B19-7A5CA945F599}|CourseManagement.DataAccess\\CourseManagement.DataAccess.csproj|solutionrelative:coursemanagement.dataaccess\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C170CDF0-60F7-4677-9B19-7A5CA945F599}|CourseManagement.DataAccess\\CourseManagement.DataAccess.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.dataaccess\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C170CDF0-60F7-4677-9B19-7A5CA945F599}|CourseManagement.DataAccess\\CourseManagement.DataAccess.csproj|solutionrelative:coursemanagement.dataaccess\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.business\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|solutionrelative:coursemanagement.business\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.business\\dto\\responsedto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -66,32 +150,16 @@
       "RelativeMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|solutionrelative:coursemanagement.business\\dto\\requestdto\\registeradmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0B6DC69-10BD-428C-A2CF-2EDE4608F73F}|CourseManagement.Api\\CourseManagement.Api.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0B6DC69-10BD-428C-A2CF-2EDE4608F73F}|CourseManagement.Api\\CourseManagement.Api.csproj|solutionrelative:coursemanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C170CDF0-60F7-4677-9B19-7A5CA945F599}|CourseManagement.DataAccess\\CourseManagement.DataAccess.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.dataaccess\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C170CDF0-60F7-4677-9B19-7A5CA945F599}|CourseManagement.DataAccess\\CourseManagement.DataAccess.csproj|solutionrelative:coursemanagement.dataaccess\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0B6DC69-10BD-428C-A2CF-2EDE4608F73F}|CourseManagement.Api\\CourseManagement.Api.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.api\\controllers\\enrollmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0B6DC69-10BD-428C-A2CF-2EDE4608F73F}|CourseManagement.Api\\CourseManagement.Api.csproj|solutionrelative:coursemanagement.api\\controllers\\enrollmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.business\\services\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|solutionrelative:coursemanagement.business\\services\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.business\\interfaces\\icourseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|solutionrelative:coursemanagement.business\\interfaces\\icourseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.business\\dto\\responsedto\\tokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|solutionrelative:coursemanagement.business\\dto\\responsedto\\tokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.business\\dto\\responsedto\\genericresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|solutionrelative:coursemanagement.business\\dto\\responsedto\\genericresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.business\\dto\\requestdto\\refreshtokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -106,44 +174,8 @@
       "RelativeMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|solutionrelative:coursemanagement.business\\dto\\requestdto\\fileuploaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C170CDF0-60F7-4677-9B19-7A5CA945F599}|CourseManagement.DataAccess\\CourseManagement.DataAccess.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.dataaccess\\context\\coursedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C170CDF0-60F7-4677-9B19-7A5CA945F599}|CourseManagement.DataAccess\\CourseManagement.DataAccess.csproj|solutionrelative:coursemanagement.dataaccess\\context\\coursedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D0B6DC69-10BD-428C-A2CF-2EDE4608F73F}|CourseManagement.Api\\CourseManagement.Api.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{D0B6DC69-10BD-428C-A2CF-2EDE4608F73F}|CourseManagement.Api\\CourseManagement.Api.csproj|solutionrelative:coursemanagement.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C170CDF0-60F7-4677-9B19-7A5CA945F599}|CourseManagement.DataAccess\\CourseManagement.DataAccess.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.dataaccess\\repositories\\mygenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C170CDF0-60F7-4677-9B19-7A5CA945F599}|CourseManagement.DataAccess\\CourseManagement.DataAccess.csproj|solutionrelative:coursemanagement.dataaccess\\repositories\\mygenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C170CDF0-60F7-4677-9B19-7A5CA945F599}|CourseManagement.DataAccess\\CourseManagement.DataAccess.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.dataaccess\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C170CDF0-60F7-4677-9B19-7A5CA945F599}|CourseManagement.DataAccess\\CourseManagement.DataAccess.csproj|solutionrelative:coursemanagement.dataaccess\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C170CDF0-60F7-4677-9B19-7A5CA945F599}|CourseManagement.DataAccess\\CourseManagement.DataAccess.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.dataaccess\\interfaces\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C170CDF0-60F7-4677-9B19-7A5CA945F599}|CourseManagement.DataAccess\\CourseManagement.DataAccess.csproj|solutionrelative:coursemanagement.dataaccess\\interfaces\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C170CDF0-60F7-4677-9B19-7A5CA945F599}|CourseManagement.DataAccess\\CourseManagement.DataAccess.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.dataaccess\\interfaces\\icourserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C170CDF0-60F7-4677-9B19-7A5CA945F599}|CourseManagement.DataAccess\\CourseManagement.DataAccess.csproj|solutionrelative:coursemanagement.dataaccess\\interfaces\\icourserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.business\\services\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|solutionrelative:coursemanagement.business\\services\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.business\\dto\\requestdto\\coursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|solutionrelative:coursemanagement.business\\dto\\requestdto\\coursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C170CDF0-60F7-4677-9B19-7A5CA945F599}|CourseManagement.DataAccess\\CourseManagement.DataAccess.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.dataaccess\\interfaces\\imyigenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C170CDF0-60F7-4677-9B19-7A5CA945F599}|CourseManagement.DataAccess\\CourseManagement.DataAccess.csproj|solutionrelative:coursemanagement.dataaccess\\interfaces\\imyigenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C170CDF0-60F7-4677-9B19-7A5CA945F599}|CourseManagement.DataAccess\\CourseManagement.DataAccess.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.dataaccess\\repositories\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C170CDF0-60F7-4677-9B19-7A5CA945F599}|CourseManagement.DataAccess\\CourseManagement.DataAccess.csproj|solutionrelative:coursemanagement.dataaccess\\repositories\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FC4BCAF8-351A-4F36-ACB9-ECC16F6D6612}|CourseManagement.Business\\CourseManagement.Business.csproj|d:\\git-hub\\coursemanagementsystem\\backend\\coursemanagement\\coursemanagement.business\\coursemanagement.business.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -161,7 +193,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 302,
-          "SelectedChildIndex": 30,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -173,7 +205,106 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 15,
+              "Title": "AdminCourseDto.cs",
+              "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Business\\Dto\\ResponseDto\\AdminCourseDto.cs",
+              "RelativeDocumentMoniker": "CourseManagement.Business\\Dto\\ResponseDto\\AdminCourseDto.cs",
+              "ToolTip": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Business\\Dto\\ResponseDto\\AdminCourseDto.cs",
+              "RelativeToolTip": "CourseManagement.Business\\Dto\\ResponseDto\\AdminCourseDto.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T08:11:46.911Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IEnrollmentService.cs",
+              "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Business\\Interfaces\\IEnrollmentService.cs",
+              "RelativeDocumentMoniker": "CourseManagement.Business\\Interfaces\\IEnrollmentService.cs",
+              "ToolTip": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Business\\Interfaces\\IEnrollmentService.cs",
+              "RelativeToolTip": "CourseManagement.Business\\Interfaces\\IEnrollmentService.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAuwAwAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T03:53:15.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IEnrollmentRepository.cs",
+              "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.DataAccess\\Interfaces\\IEnrollmentRepository.cs",
+              "RelativeDocumentMoniker": "CourseManagement.DataAccess\\Interfaces\\IEnrollmentRepository.cs",
+              "ToolTip": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.DataAccess\\Interfaces\\IEnrollmentRepository.cs",
+              "RelativeToolTip": "CourseManagement.DataAccess\\Interfaces\\IEnrollmentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T03:50:08.875Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EnrollmentRepository.cs",
+              "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.DataAccess\\Repositories\\EnrollmentRepository.cs",
+              "RelativeDocumentMoniker": "CourseManagement.DataAccess\\Repositories\\EnrollmentRepository.cs",
+              "ToolTip": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.DataAccess\\Repositories\\EnrollmentRepository.cs",
+              "RelativeToolTip": "CourseManagement.DataAccess\\Repositories\\EnrollmentRepository.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T03:47:13.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EnrollmentService.cs",
+              "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Business\\Services\\EnrollmentService.cs",
+              "RelativeDocumentMoniker": "CourseManagement.Business\\Services\\EnrollmentService.cs",
+              "ToolTip": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Business\\Services\\EnrollmentService.cs",
+              "RelativeToolTip": "CourseManagement.Business\\Services\\EnrollmentService.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAABcAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T03:46:52.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "EnrollmentResponseDto.cs",
+              "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Business\\Dto\\ResponseDto\\EnrollmentResponseDto.cs",
+              "RelativeDocumentMoniker": "CourseManagement.Business\\Dto\\ResponseDto\\EnrollmentResponseDto.cs",
+              "ToolTip": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Business\\Dto\\ResponseDto\\EnrollmentResponseDto.cs",
+              "RelativeToolTip": "CourseManagement.Business\\Dto\\ResponseDto\\EnrollmentResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T03:45:15.627Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Enrollment.cs",
+              "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.DataAccess\\Models\\Enrollment.cs",
+              "RelativeDocumentMoniker": "CourseManagement.DataAccess\\Models\\Enrollment.cs",
+              "ToolTip": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.DataAccess\\Models\\Enrollment.cs",
+              "RelativeToolTip": "CourseManagement.DataAccess\\Models\\Enrollment.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T03:43:17.909Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "EnrollmentDto.cs",
+              "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Business\\Dto\\RequestDto\\EnrollmentDto.cs",
+              "RelativeDocumentMoniker": "CourseManagement.Business\\Dto\\RequestDto\\EnrollmentDto.cs",
+              "ToolTip": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Business\\Dto\\RequestDto\\EnrollmentDto.cs",
+              "RelativeToolTip": "CourseManagement.Business\\Dto\\RequestDto\\EnrollmentDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T03:42:43.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
               "Title": ".gitignore",
               "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\.gitignore",
               "RelativeDocumentMoniker": "..\\..\\.gitignore",
@@ -181,12 +312,11 @@
               "RelativeToolTip": "..\\..\\.gitignore",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-10-28T05:09:40.621Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-28T05:09:40.621Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 31,
               "Title": "UpdateUserDto.cs",
               "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Business\\Dto\\RequestDto\\UpdateUserDto.cs",
               "RelativeDocumentMoniker": "CourseManagement.Business\\Dto\\RequestDto\\UpdateUserDto.cs",
@@ -194,12 +324,11 @@
               "RelativeToolTip": "CourseManagement.Business\\Dto\\RequestDto\\UpdateUserDto.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAuwBMAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T05:20:29.956Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-27T05:20:29.956Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 37,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.DataAccess\\Models\\User.cs",
               "RelativeDocumentMoniker": "CourseManagement.DataAccess\\Models\\User.cs",
@@ -211,7 +340,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 27,
               "Title": "IUserService.cs",
               "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Business\\Interfaces\\IUserService.cs",
               "RelativeDocumentMoniker": "CourseManagement.Business\\Interfaces\\IUserService.cs",
@@ -219,25 +348,23 @@
               "RelativeToolTip": "CourseManagement.Business\\Interfaces\\IUserService.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T11:13:10.547Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T11:13:10.547Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 25,
               "Title": "UserService.cs",
               "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Business\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "CourseManagement.Business\\Services\\UserService.cs",
               "ToolTip": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Business\\Services\\UserService.cs",
               "RelativeToolTip": "CourseManagement.Business\\Services\\UserService.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAkwBsAAABNAAAAAAAAAA==",
+              "ViewState": "AgIAAFMAAAAAAAAAAADwvx8AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T11:12:55.875Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T11:12:55.875Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 42,
               "Title": "FileUploadDto.cs",
               "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Business\\Dto\\RequestDto\\FileUploadDto.cs",
               "RelativeDocumentMoniker": "CourseManagement.Business\\Dto\\RequestDto\\FileUploadDto.cs",
@@ -249,67 +376,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 12,
               "Title": "MyGenericRepository.cs",
               "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.DataAccess\\Repositories\\MyGenericRepository.cs",
               "RelativeDocumentMoniker": "CourseManagement.DataAccess\\Repositories\\MyGenericRepository.cs",
               "ToolTip": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.DataAccess\\Repositories\\MyGenericRepository.cs",
               "RelativeToolTip": "CourseManagement.DataAccess\\Repositories\\MyGenericRepository.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAkwDIAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAmwBsAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-21T12:06:10.91Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 14,
               "Title": "IMyIGenericRepository.cs",
               "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.DataAccess\\Interfaces\\IMyIGenericRepository.cs",
               "RelativeDocumentMoniker": "CourseManagement.DataAccess\\Interfaces\\IMyIGenericRepository.cs",
               "ToolTip": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.DataAccess\\Interfaces\\IMyIGenericRepository.cs",
               "RelativeToolTip": "CourseManagement.DataAccess\\Interfaces\\IMyIGenericRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA4AAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAiwAsAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-21T12:04:23.523Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 16,
               "Title": "CourseDto.cs",
               "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Business\\Dto\\RequestDto\\CourseDto.cs",
               "RelativeDocumentMoniker": "CourseManagement.Business\\Dto\\RequestDto\\CourseDto.cs",
               "ToolTip": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Business\\Dto\\RequestDto\\CourseDto.cs",
               "RelativeToolTip": "CourseManagement.Business\\Dto\\RequestDto\\CourseDto.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-21T08:49:30.294Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 11,
               "Title": "CourseRepository.cs",
               "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.DataAccess\\Repositories\\CourseRepository.cs",
               "RelativeDocumentMoniker": "CourseManagement.DataAccess\\Repositories\\CourseRepository.cs",
               "ToolTip": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.DataAccess\\Repositories\\CourseRepository.cs",
               "RelativeToolTip": "CourseManagement.DataAccess\\Repositories\\CourseRepository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAIAzwBQAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-20T10:37:54.851Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 10,
               "Title": "ICourseRepository.cs",
               "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.DataAccess\\Interfaces\\ICourseRepository.cs",
               "RelativeDocumentMoniker": "CourseManagement.DataAccess\\Interfaces\\ICourseRepository.cs",
               "ToolTip": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.DataAccess\\Interfaces\\ICourseRepository.cs",
               "RelativeToolTip": "CourseManagement.DataAccess\\Interfaces\\ICourseRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-20T10:37:03.495Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 35,
               "Title": "ConstantValues.cs",
               "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Business\\constants\\ConstantValues.cs",
               "RelativeDocumentMoniker": "CourseManagement.Business\\constants\\ConstantValues.cs",
@@ -321,7 +448,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 44,
               "Title": "CourseManagement.Business.csproj",
               "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Business\\CourseManagement.Business.csproj",
               "RelativeDocumentMoniker": "CourseManagement.Business\\CourseManagement.Business.csproj",
@@ -333,7 +460,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 45,
               "Title": "CourseManagement.Api.csproj",
               "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Api\\CourseManagement.Api.csproj",
               "RelativeDocumentMoniker": "CourseManagement.Api\\CourseManagement.Api.csproj",
@@ -345,32 +472,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 9,
               "Title": "MappingProfile.cs",
               "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Business\\Mappings\\MappingProfile.cs",
               "RelativeDocumentMoniker": "CourseManagement.Business\\Mappings\\MappingProfile.cs",
               "ToolTip": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Business\\Mappings\\MappingProfile.cs",
               "RelativeToolTip": "CourseManagement.Business\\Mappings\\MappingProfile.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABUAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAABrAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-20T04:18:08.952Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 18,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.DataAccess\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "CourseManagement.DataAccess\\Repositories\\UserRepository.cs",
               "ToolTip": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.DataAccess\\Repositories\\UserRepository.cs",
               "RelativeToolTip": "CourseManagement.DataAccess\\Repositories\\UserRepository.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAkwDUAAABBAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAEwA8AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T02:43:11.757Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-20T02:43:11.757Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 32,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.DataAccess\\Interfaces\\IUserRepository.cs",
               "RelativeDocumentMoniker": "CourseManagement.DataAccess\\Interfaces\\IUserRepository.cs",
@@ -378,12 +504,11 @@
               "RelativeToolTip": "CourseManagement.DataAccess\\Interfaces\\IUserRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwA8AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T02:42:58.208Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-20T02:42:58.208Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 28,
               "Title": "AccountService.cs",
               "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Business\\Services\\AccountService.cs",
               "RelativeDocumentMoniker": "CourseManagement.Business\\Services\\AccountService.cs",
@@ -391,12 +516,11 @@
               "RelativeToolTip": "CourseManagement.Business\\Services\\AccountService.cs",
               "ViewState": "AgIAAH0AAAAAAAAAAAAYwLUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T02:39:32.536Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-20T02:39:32.536Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 33,
               "Title": "UserDto.cs",
               "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Business\\Dto\\ResponseDto\\UserDto.cs",
               "RelativeDocumentMoniker": "CourseManagement.Business\\Dto\\ResponseDto\\UserDto.cs",
@@ -408,7 +532,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 39,
               "Title": "TokenDto.cs",
               "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Business\\Dto\\ResponseDto\\TokenDto.cs",
               "RelativeDocumentMoniker": "CourseManagement.Business\\Dto\\ResponseDto\\TokenDto.cs",
@@ -420,7 +544,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 29,
               "Title": "IAccountService.cs",
               "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Business\\Interfaces\\IAccountService.cs",
               "RelativeDocumentMoniker": "CourseManagement.Business\\Interfaces\\IAccountService.cs",
@@ -428,12 +552,11 @@
               "RelativeToolTip": "CourseManagement.Business\\Interfaces\\IAccountService.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAIwA4AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T02:29:57.013Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-20T02:29:57.013Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 36,
               "Title": "RegisterAdmin.cs",
               "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Business\\Dto\\RequestDto\\RegisterAdmin.cs",
               "RelativeDocumentMoniker": "CourseManagement.Business\\Dto\\RequestDto\\RegisterAdmin.cs",
@@ -445,7 +568,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 34,
               "Title": "RegisterUserDto.cs",
               "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Business\\Dto\\RequestDto\\RegisterUserDto.cs",
               "RelativeDocumentMoniker": "CourseManagement.Business\\Dto\\RequestDto\\RegisterUserDto.cs",
@@ -457,7 +580,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 40,
               "Title": "RefreshTokenDto.cs",
               "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Business\\Dto\\RequestDto\\RefreshTokenDto.cs",
               "RelativeDocumentMoniker": "CourseManagement.Business\\Dto\\RequestDto\\RefreshTokenDto.cs",
@@ -469,7 +592,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 41,
               "Title": "LoginDto.cs",
               "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Business\\Dto\\RequestDto\\LoginDto.cs",
               "RelativeDocumentMoniker": "CourseManagement.Business\\Dto\\RequestDto\\LoginDto.cs",
@@ -481,20 +604,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "AuthenticationController.cs",
               "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Api\\Controllers\\AuthenticationController.cs",
               "RelativeDocumentMoniker": "CourseManagement.Api\\Controllers\\AuthenticationController.cs",
               "ToolTip": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Api\\Controllers\\AuthenticationController.cs",
               "RelativeToolTip": "CourseManagement.Api\\Controllers\\AuthenticationController.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwCIAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAADQAAAAAAAAAAAAkwCIAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-20T02:10:40.935Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 38,
               "Title": "JwtTokenService.cs",
               "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Business\\Services\\JwtTokenService.cs",
               "RelativeDocumentMoniker": "CourseManagement.Business\\Services\\JwtTokenService.cs",
@@ -506,129 +629,130 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 3,
               "Title": "EnrollmentController.cs",
               "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Api\\Controllers\\EnrollmentController.cs",
               "RelativeDocumentMoniker": "CourseManagement.Api\\Controllers\\EnrollmentController.cs",
               "ToolTip": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Api\\Controllers\\EnrollmentController.cs",
               "RelativeToolTip": "CourseManagement.Api\\Controllers\\EnrollmentController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAAuwD4AAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-19T16:45:09.602Z"
+              "WhenOpened": "2025-10-19T16:45:09.602Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "UserController.cs",
               "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Api\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "CourseManagement.Api\\Controllers\\UserController.cs",
               "ToolTip": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Api\\Controllers\\UserController.cs",
               "RelativeToolTip": "CourseManagement.Api\\Controllers\\UserController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAzwBsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwBsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-19T16:44:54.237Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "CourseController.cs",
               "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Api\\Controllers\\CourseController.cs",
               "RelativeDocumentMoniker": "CourseManagement.Api\\Controllers\\CourseController.cs",
               "ToolTip": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Api\\Controllers\\CourseController.cs",
               "RelativeToolTip": "CourseManagement.Api\\Controllers\\CourseController.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAYwCUAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwCkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-19T16:44:39.455Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 8,
               "Title": "CourseService.cs",
               "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Business\\Services\\CourseService.cs",
               "RelativeDocumentMoniker": "CourseManagement.Business\\Services\\CourseService.cs",
               "ToolTip": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Business\\Services\\CourseService.cs",
               "RelativeToolTip": "CourseManagement.Business\\Services\\CourseService.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAowE4AAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAYwCAAAABeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-19T16:40:24.312Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 7,
               "Title": "ICourseService.cs",
               "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Business\\Interfaces\\ICourseService.cs",
               "RelativeDocumentMoniker": "CourseManagement.Business\\Interfaces\\ICourseService.cs",
               "ToolTip": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Business\\Interfaces\\ICourseService.cs",
               "RelativeToolTip": "CourseManagement.Business\\Interfaces\\ICourseService.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAnwBEAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAiwA4AAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-19T16:40:03.311Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 13,
               "Title": "GenericRepository.cs",
               "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.DataAccess\\Repositories\\GenericRepository.cs",
               "RelativeDocumentMoniker": "CourseManagement.DataAccess\\Repositories\\GenericRepository.cs",
               "ToolTip": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.DataAccess\\Repositories\\GenericRepository.cs",
               "RelativeToolTip": "CourseManagement.DataAccess\\Repositories\\GenericRepository.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAowEsAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAqwCoAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-19T15:57:23.678Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 23,
               "Title": "IGenericRepository.cs",
               "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.DataAccess\\Interfaces\\IGenericRepository.cs",
               "RelativeDocumentMoniker": "CourseManagement.DataAccess\\Interfaces\\IGenericRepository.cs",
               "ToolTip": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.DataAccess\\Interfaces\\IGenericRepository.cs",
               "RelativeToolTip": "CourseManagement.DataAccess\\Interfaces\\IGenericRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-19T15:53:07.723Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 20,
               "Title": "GenericResponseDto.cs",
               "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Business\\Dto\\ResponseDto\\GenericResponseDto.cs",
               "RelativeDocumentMoniker": "CourseManagement.Business\\Dto\\ResponseDto\\GenericResponseDto.cs",
               "ToolTip": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Business\\Dto\\ResponseDto\\GenericResponseDto.cs",
               "RelativeToolTip": "CourseManagement.Business\\Dto\\ResponseDto\\GenericResponseDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAuwAoAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-19T15:51:29.419Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Api\\Program.cs",
               "RelativeDocumentMoniker": "CourseManagement.Api\\Program.cs",
               "ToolTip": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Api\\Program.cs",
               "RelativeToolTip": "CourseManagement.Api\\Program.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAQwC8AAABDAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwBoAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-19T15:44:42.478Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 19,
               "Title": "CoursedbContext.cs",
               "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.DataAccess\\Context\\CoursedbContext.cs",
               "RelativeDocumentMoniker": "CourseManagement.DataAccess\\Context\\CoursedbContext.cs",
               "ToolTip": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.DataAccess\\Context\\CoursedbContext.cs",
               "RelativeToolTip": "CourseManagement.DataAccess\\Context\\CoursedbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-19T15:44:29.835Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 43,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Git-hub\\CourseManagementSystem\\backend\\CourseManagement\\CourseManagement.Api\\appsettings.json",
               "RelativeDocumentMoniker": "CourseManagement.Api\\appsettings.json",
